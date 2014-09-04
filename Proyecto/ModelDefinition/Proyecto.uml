@@ -108,6 +108,23 @@ sistema xyz.
           LastKnownLocation="Proyecto.uml" />
       </annotatedElements>
     </comment>
+    <comment
+      Id="ebc527aa-1ad2-4445-8914-e0850322b99d">
+      <body>Prerequisitos
+
+1 El guardia de entrada peatonal
+ ha iniciado sesion en el
+sistema xyz.
+2. El guardia de entrada peatonal esta en la facilidad de
+ de registro de visitas no anunciadas.
+5. El visitante esta en la posta</body>
+      <annotatedElements>
+        <initialNodeMoniker
+          Id="6a0dd474-d70d-45a3-a642-2217c9fb4e4b"
+          LastKnownName="Initial1"
+          LastKnownLocation="Proyecto.uml" />
+      </annotatedElements>
+    </comment>
   </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
@@ -479,7 +496,7 @@ sistema xyz.
             <behavior>
               <activityMoniker
                 Id="170842be-3ffe-46d0-af64-394c77ff4a3e"
-                LastKnownName="Registrar una visita no"
+                LastKnownName="Registrar una visitas"
                 LastKnownLocation="Proyecto.uml" />
             </behavior>
           </callBehaviorAction>
@@ -716,7 +733,7 @@ sistema xyz.
     <packageHasNamedElement>
       <activity
         Id="170842be-3ffe-46d0-af64-394c77ff4a3e"
-        name="Registrar una visita no"
+        name="Registrar una visitas"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false"
@@ -1186,6 +1203,165 @@ sistema xyz.
               </controlFlow>
             </flowNodeTargets>
           </mergeNode>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="a4841c89-ec19-42b4-a184-a9cca7f3321d"
+        name="Salida de visitas no anunciadas"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="6a0dd474-d70d-45a3-a642-2217c9fb4e4b"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9c07baaf-cb00-4f13-990c-be1a5ad6ba33"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="a3b57e21-988c-48c6-b4db-e0b16aab4e87"
+                  LastKnownName="Selecciona el visistante no anunciado de la lista de personas que entraron al campus"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityParameterNode
+            Id="c6268f14-ca2d-4101-b818-178fa3d6d077"
+            name="Visittante no anunciado"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="6aa1509e-820f-4495-8a4c-09d052f3af1d"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </activityParameterNode>
+          <activityParameterNode
+            Id="8d6bf133-6771-4514-bd42-c0a4b59bc5b8"
+            name="Guardia de entrada peatonal"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="1f9a89d5-b0be-457b-9b01-0dc17387edcb"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </activityParameterNode>
+          <opaqueAction
+            Id="a3b57e21-988c-48c6-b4db-e0b16aab4e87"
+            name="Selecciona el visistante no anunciado de la lista de personas que entraron al campus"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="df9e3f3f-a2f4-45bb-beb3-e5c60b934bd5"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="d63a8234-78e1-4364-adb9-c5511b24b60b"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="d63a8234-78e1-4364-adb9-c5511b24b60b"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="467e2f95-93d4-4c86-9974-3eddc10e89ef"
+                guard="Si lo encuentra en la lista"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="fd58b480-4631-498d-b3e4-1c07d17ecc59"
+                  LastKnownName="Marca la salida del visistante no anunciado"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="d1c42a0e-02b3-4214-b7b8-b92257a1fb82"
+                guard="No lo encuentra en la lista"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="10790237-2829-46ed-a012-c1d3604f365c"
+                  LastKnownName="Buscar el visistante no anunciado por numero de indentidad o numero de carnet"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="fd58b480-4631-498d-b3e4-1c07d17ecc59"
+            name="Marca la salida del visistante no anunciado"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="aef33880-d3ca-4202-adeb-dc6e9daa4f14"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="4a582391-569d-4f75-9b41-7b75629141f0"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="10790237-2829-46ed-a012-c1d3604f365c"
+            name="Buscar el visistante no anunciado por numero de indentidad o numero de carnet"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="be349b48-79ce-4e7b-8f8f-fc9dd310a695"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="4a582391-569d-4f75-9b41-7b75629141f0"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode
+            Id="4a582391-569d-4f75-9b41-7b75629141f0"
+            name="Merge1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b81e26ff-ea1c-4ffa-8659-dbb50d27e1e6"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ebceb498-3c40-4bb9-9fa4-b4d00cdc55e1"
+                  LastKnownName="El visitante no anunciado sale del campus"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <activityFinalNode
+            Id="9f4d488c-a7b6-447a-88bb-4ca47336846c"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="ebceb498-3c40-4bb9-9fa4-b4d00cdc55e1"
+            name="El visitante no anunciado sale del campus"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f3509bfb-fbfe-4811-a993-6c034a35cc2b"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="9f4d488c-a7b6-447a-88bb-4ca47336846c"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
         </nodes>
       </activity>
     </packageHasNamedElement>
