@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
   dslVersion="1.0.0.0"
   Id="6b93e885-3e82-4e76-97aa-57cbc7854abd"
   name="Proyecto" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -7,11 +7,12 @@
     <comment
       Id="56ec1e0d-c965-445e-a901-c75ea1196c8a">
       <body>Precondiciones:
+
 1. Un administrativo
-    ya registró personas
-   como visitas anunciadas
-2. Existen alumnos con
-   sus fotografías.</body>
+ ya registró personas
+ como visitas anunciadas
+
+2. Existen alumnos con sus fotografías.</body>
       <annotatedElements>
         <initialNodeMoniker
           Id="ac44646c-0db2-4cf0-ac3f-b3f444ca663e"
@@ -145,14 +146,14 @@ sistema xyz.
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="9d6bd160-f520-4933-ba54-ae7647bd8b1f"
-                  LastKnownName="Espera en una barrera"
+                  LastKnownName="Esperar en una barrera"
                   LastKnownLocation="Proyecto.uml" />
               </controlFlow>
             </flowNodeTargets>
           </initialNode>
           <opaqueAction
             Id="9d6bd160-f520-4933-ba54-ae7647bd8b1f"
-            name="Espera en una barrera"
+            name="Esperar en una barrera"
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
@@ -294,7 +295,7 @@ sistema xyz.
               </controlFlow>
               <controlFlow
                 Id="b7fd8223-4b15-479f-aa77-113456219e1c"
-                guard=" [Nombre o propósito no registrados]"
+                guard="Nombre o propósito no registrados"
                 isLeaf="false">
                 <mergeNodeMoniker
                   Id="8f8fd7ed-68a8-4f87-ba2f-bdc427cd069f"

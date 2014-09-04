@@ -1,14 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="ed64c663-6301-4a98-8c44-8c7fae147ddf" name="Proceso General" linkedPackageId="16566310-f528-46be-ad3e-37bf664bee69" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="ed64c663-6301-4a98-8c44-8c7fae147ddf" name="Proceso General" linkedPackageId="16566310-f528-46be-ad3e-37bf664bee69" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <ownedCommentsInternal>
     <comment Id="a83d0e5c-95ca-4d73-93d3-40bbf31d5959">
       <elementDefinition Id="56ec1e0d-c965-445e-a901-c75ea1196c8a" />
       <body>Precondiciones:
+
 1. Un administrativo
-    ya registró personas
-   como visitas anunciadas
-2. Existen alumnos con
-   sus fotografías.</body>
+ ya registró personas
+ como visitas anunciadas
+
+2. Existen alumnos con sus fotografías.</body>
       <annotatedElements>
         <initialNodeMoniker Id="7848bc10-eed4-48b1-af03-117b152c2d75" LastKnownName="Initial1" />
       </annotatedElements>
@@ -23,12 +24,12 @@
             <elementDefinition Id="ac44646c-0db2-4cf0-ac3f-b3f444ca663e" />
             <flowNodeTargets>
               <controlFlow Id="e82ac6b9-1e24-4261-a2f6-ac832fc7a8f7" isLeaf="false">
-                <opaqueActionMoniker Id="5e38062d-92a6-44fc-abaa-1f6091cd5ff8" LastKnownName="Espera en una barrera" />
+                <opaqueActionMoniker Id="5e38062d-92a6-44fc-abaa-1f6091cd5ff8" LastKnownName="Esperar en una barrera" />
                 <elementDefinition Id="01549db6-3052-47d9-a55b-2f5272ff5434" />
               </controlFlow>
             </flowNodeTargets>
           </initialNode>
-          <opaqueAction Id="5e38062d-92a6-44fc-abaa-1f6091cd5ff8" name="Espera en una barrera" isLeaf="false">
+          <opaqueAction Id="5e38062d-92a6-44fc-abaa-1f6091cd5ff8" name="Esperar en una barrera" isLeaf="false">
             <elementDefinition Id="9d6bd160-f520-4933-ba54-ae7647bd8b1f" />
             <flowNodeTargets>
               <controlFlow Id="32ec8f09-c26b-48bd-b6d4-5da0b12241e6" isLeaf="false">
@@ -109,7 +110,7 @@
                 <callBehaviorActionMoniker Id="3b190ec7-5cfd-4f65-950c-1e8dfe280d5b" LastKnownName="Registrar una visita no&#xD;&#xA;anunciada" />
                 <elementDefinition Id="7523b55f-b089-40dc-9a2e-c5ac78b553a8" />
               </controlFlow>
-              <controlFlow Id="7ae731cd-e4ee-482c-9a34-7c9c26198424" guard=" [Nombre o propósito no registrados]" isLeaf="false">
+              <controlFlow Id="7ae731cd-e4ee-482c-9a34-7c9c26198424" guard="Nombre o propósito no registrados" isLeaf="false">
                 <mergeNodeMoniker Id="dcc52ead-c7ce-4383-934b-f0396871aa70" LastKnownName="Merge3" />
                 <elementDefinition Id="b7fd8223-4b15-479f-aa77-113456219e1c" />
               </controlFlow>
