@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="591a5625-8f8d-4684-b11d-69ba8d5f279b" name="Registrar una visita no" linkedPackageId="61556e4e-1f1b-4e0d-896c-bfae9edc37cb" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="bab1880e-bb19-44bc-ac91-e8492e00642b">
+      <elementDefinition Id="edfcf1ac-2de1-47f0-9dbd-9274787cb27c" />
+      <body>Hacer referencia al boceto de registro
+de visitas anunciadas</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="2100cba0-fc8e-4d20-8be4-1fc705dcf084" LastKnownName="Revisar la &#xD;&#xA;información &#xD;&#xA;suministrada" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="1a2ed94c-0754-4216-921b-1e65a963310f" name="Registrar una visita no" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="170842be-3ffe-46d0-af64-394c77ff4a3e" />
+        <nodes>
+          <initialNode Id="f974b779-f915-4f12-95f8-102b419fc319" name="Initial1" isLeaf="false">
+            <elementDefinition Id="30f6bd7d-54e8-46e9-87fb-d85b55136b8d" />
+            <flowNodeTargets>
+              <controlFlow Id="bd26476f-d146-4abc-aa7b-ea9bacdd22c0" isLeaf="false">
+                <opaqueActionMoniker Id="37623f3e-bb55-47b8-9ab1-5f780a715832" LastKnownName="Seleccionar el&#xD;&#xA;campus donde&#xD;&#xA;entrarán las&#xD;&#xA;visitas" />
+                <elementDefinition Id="c6b79a06-64c5-47d7-9a02-655889ed22cb" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="37623f3e-bb55-47b8-9ab1-5f780a715832" name="Seleccionar el&#xD;&#xA;campus donde&#xD;&#xA;entrarán las&#xD;&#xA;visitas" isLeaf="false">
+            <elementDefinition Id="27e4739a-256b-43bc-ac28-5441ac8778c1" />
+            <flowNodeTargets>
+              <controlFlow Id="53c264ae-4acd-4e35-b0f4-09bc36ae9e39" isLeaf="false">
+                <mergeNodeMoniker Id="23e35b41-11bb-429a-baed-82a1a470022e" LastKnownName="Merge1" />
+                <elementDefinition Id="5eaba5fa-845d-436c-94b0-e44459dae89c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode Id="23e35b41-11bb-429a-baed-82a1a470022e" name="Merge1" isLeaf="false">
+            <elementDefinition Id="5cd499ac-e3d3-4fbd-ab32-f33428deaff5" />
+            <flowNodeTargets>
+              <controlFlow Id="3363d819-9dab-4bdf-8bdc-18e5d7300c2b" isLeaf="false">
+                <decisionNodeMoniker Id="084bd39c-1dd3-4713-a490-c14dc2641367" LastKnownName="Decision1" />
+                <elementDefinition Id="1d27409f-a9b9-47cc-8952-b88a5a9434ee" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <opaqueAction Id="394a8b7f-7f98-4bc6-bdf3-b7b49d27465f" name="Especificar el nombre" isLeaf="false">
+            <elementDefinition Id="7242cbbf-e1a4-4568-9597-d9b0668337a6" />
+            <flowNodeTargets>
+              <controlFlow Id="725e3980-c082-44b5-89dc-fc066349e7f2" isLeaf="false">
+                <opaqueActionMoniker Id="7ea66f3c-7573-4e52-99c1-87c35113677c" LastKnownName="Especificar tipo&#xD;&#xA;de entrada&#xD;&#xA;(Vehicular o peatonal)" />
+                <elementDefinition Id="e5c80508-d877-4175-93af-f7902562f169" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="7ea66f3c-7573-4e52-99c1-87c35113677c" name="Especificar tipo&#xD;&#xA;de entrada&#xD;&#xA;(Vehicular o peatonal)" isLeaf="false">
+            <elementDefinition Id="3cd961a4-f171-4652-9f46-05a07e0a6ecd" />
+            <flowNodeTargets>
+              <controlFlow Id="f2712e9d-9381-49da-b0fe-ddf8bab42ab8" isLeaf="false">
+                <mergeNodeMoniker Id="e2c1ef9c-b804-4fb1-b4ed-d09cf272d56f" LastKnownName="Merge3" />
+                <elementDefinition Id="fe99f11c-fe2e-4338-acfc-9b3f1492b745" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode Id="e2c1ef9c-b804-4fb1-b4ed-d09cf272d56f" name="Merge3" isLeaf="false">
+            <elementDefinition Id="2904b23b-424e-40f7-993f-c4f1130bc6e2" />
+            <flowNodeTargets>
+              <controlFlow Id="bd999229-06a3-483b-9229-18ec11a3a985" guard="Todas las personas registradas" isLeaf="false">
+                <decisionNodeMoniker Id="d3892e89-3455-4c2a-843d-ab737a5127e5" LastKnownName="Decision2" />
+                <elementDefinition Id="083a3dc1-7f59-4ae6-9c93-a2b7c069918f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <decisionNode Id="084bd39c-1dd3-4713-a490-c14dc2641367" name="Decision1" isLeaf="false">
+            <elementDefinition Id="be143b0a-9fb3-494e-b6d6-9a3eb467fc8c" />
+            <flowNodeTargets>
+              <controlFlow Id="9d0b40f7-834c-422c-958e-a57d2f389a56" isLeaf="false">
+                <opaqueActionMoniker Id="394a8b7f-7f98-4bc6-bdf3-b7b49d27465f" LastKnownName="Especificar el nombre" />
+                <elementDefinition Id="5999cc9a-e4a6-4804-b8e2-526943469909" />
+              </controlFlow>
+              <controlFlow Id="65e80c20-df98-4f1f-a247-862034809a60" guard="Hay más personas" isLeaf="false">
+                <mergeNodeMoniker Id="e2c1ef9c-b804-4fb1-b4ed-d09cf272d56f" LastKnownName="Merge3" />
+                <elementDefinition Id="d2769af4-493f-4ddc-85c5-416c14f29a32" />
+              </controlFlow>
+              <controlFlow Id="b3f8371d-7737-48b2-a496-89e536b12f18" guard="Hay información por corregir" isLeaf="false">
+                <mergeNodeMoniker Id="813576c6-d72c-41ae-8ccd-c5b967163c25" LastKnownName="Merge4" />
+                <elementDefinition Id="5b6d367c-05e4-445c-9b50-1628dc537ead" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode Id="d3892e89-3455-4c2a-843d-ab737a5127e5" name="Decision2" isLeaf="false">
+            <elementDefinition Id="109fb4ba-c33b-4f4a-98a0-03948781fe14" />
+            <flowNodeTargets>
+              <controlFlow Id="0c6badfb-df81-4c23-8130-b1a479006f0e" guard="Hay observaciones" isLeaf="false">
+                <opaqueActionMoniker Id="ef479d6f-19e9-4b61-b41d-388acc88980f" LastKnownName="Ingresar las&#xD;&#xA;observaciones" />
+                <elementDefinition Id="1e7e3ead-6df4-4a27-a9e6-b5b835e7e7d2" />
+              </controlFlow>
+              <controlFlow Id="961673c6-74dd-4bc9-8ead-c8869478852f" guard="No hay observaciones" isLeaf="false">
+                <mergeNodeMoniker Id="36c94f1b-7a31-4aed-ad5d-93b7bf81ac54" LastKnownName="Merge2" />
+                <elementDefinition Id="6d9148a3-f310-41d6-ab35-7763b64ccd0e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="ef479d6f-19e9-4b61-b41d-388acc88980f" name="Ingresar las&#xD;&#xA;observaciones" isLeaf="false">
+            <elementDefinition Id="66416a22-5f2b-4e82-9a5d-2ad429969122" />
+            <flowNodeTargets>
+              <controlFlow Id="49a8c96d-711b-4a45-8e15-d9c043cc8653" isLeaf="false">
+                <mergeNodeMoniker Id="36c94f1b-7a31-4aed-ad5d-93b7bf81ac54" LastKnownName="Merge2" />
+                <elementDefinition Id="14c48d27-70e3-43b7-9fb3-741cdb4f4c20" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="2100cba0-fc8e-4d20-8be4-1fc705dcf084" name="Revisar la &#xD;&#xA;información &#xD;&#xA;suministrada" isLeaf="false">
+            <elementDefinition Id="6c3ff4ba-54b7-4bdc-a049-5e15e1d97d52" />
+          </opaqueAction>
+          <mergeNode Id="36c94f1b-7a31-4aed-ad5d-93b7bf81ac54" name="Merge2" isLeaf="false">
+            <elementDefinition Id="0cd93782-d674-4c49-be9f-1dc8fed3a893" />
+            <flowNodeTargets>
+              <controlFlow Id="2baf4555-9f77-4499-b85b-6d2351f63ac3" isLeaf="false">
+                <opaqueActionMoniker Id="2100cba0-fc8e-4d20-8be4-1fc705dcf084" LastKnownName="Revisar la &#xD;&#xA;información &#xD;&#xA;suministrada" />
+                <elementDefinition Id="72428bc1-6138-42e0-9f3e-dfb235b8ced2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <opaqueAction Id="c60e28cc-aebb-4e6d-a4f4-b6a1f75d2e75" name="Autorizar las &#xD;&#xA;visitas" isLeaf="false">
+            <elementDefinition Id="d9723854-164f-4e5d-b868-2d0931238cf5" />
+            <flowNodeTargets>
+              <controlFlow Id="8b36940c-da1c-47ec-affe-071a6ce484bc" isLeaf="false">
+                <activityFinalNodeMoniker Id="56acd346-5666-4c5c-b381-fd687cfd4e7e" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="37de7632-d6e2-4513-ae1f-68a4194ca9e3" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="56acd346-5666-4c5c-b381-fd687cfd4e7e" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="e91d5c1f-81fd-4739-80db-457845b14216" />
+          </activityFinalNode>
+          <mergeNode Id="813576c6-d72c-41ae-8ccd-c5b967163c25" name="Merge4" isLeaf="false">
+            <elementDefinition Id="4d350895-8185-4dab-a7ce-251183520c7f" />
+            <flowNodeTargets>
+              <controlFlow Id="3fde8bfd-9d2f-4c89-99c8-80df8f53fe43" guard="Infromación correcta" isLeaf="false">
+                <opaqueActionMoniker Id="c60e28cc-aebb-4e6d-a4f4-b6a1f75d2e75" LastKnownName="Autorizar las &#xD;&#xA;visitas" />
+                <elementDefinition Id="ab3e17f4-7637-43be-ad56-ed2e0c4a9223" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="61556e4e-1f1b-4e0d-896c-bfae9edc37cb" name="Proyecto">
+    <elementDefinition Id="6b93e885-3e82-4e76-97aa-57cbc7854abd" />
+    <profileInstances>
+      <packageHasProfileInstances Id="4ea939a5-4548-4647-add3-2c2fa37ceed4">
+        <profileInstance Id="f4d4e87e-aa89-4041-b9b5-c695b0e1080e" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="265a87b8-74c9-4a4e-8d99-f8cd553dbfbd">
+        <profileInstance Id="d0c190ef-f354-496a-bab9-86f70c1c8cfe" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

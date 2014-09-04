@@ -1,0 +1,1187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+  dslVersion="1.0.0.0"
+  Id="6b93e885-3e82-4e76-97aa-57cbc7854abd"
+  name="Proyecto" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="56ec1e0d-c965-445e-a901-c75ea1196c8a">
+      <body>Precondiciones:
+1. Un administrativo
+    ya registró personas
+   como visitas anunciadas
+2. Existen alumnos con
+   sus fotografías.</body>
+      <annotatedElements>
+        <initialNodeMoniker
+          Id="ac44646c-0db2-4cf0-ac3f-b3f444ca663e"
+          LastKnownName="Initial1"
+          LastKnownLocation="Proyecto.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="a4de452e-a1a2-4eaa-91fe-4866ec90a0cc">
+      <body>Prerequisitos
+1. El visitante ya ha sido 
+    registrado en el sistema xyz,
+    facilidad registro de visitas
+    anunciadas.
+2. El guardia de entrada peatonal
+vehicular ha iniciado sesion en el
+sistema xyz.
+3. El guardia de entrada peatonal
+vehicular esta en la facilidad de
+ingreso de visitas anunciadas
+4. El visitante esta en la posta</body>
+      <annotatedElements>
+        <initialNodeMoniker
+          Id="2f4b7051-ef03-4b2c-9b74-54eedb717b2c"
+          LastKnownName="Initial1"
+          LastKnownLocation="Proyecto.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="f2264b4d-eef7-4ccc-ac06-53ca1bf99caf">
+      <body>Favor ver boceto de 
+codigo del boceto  de 
+visitas anunciadas con sus
+criterios de aceptacion</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="047cb689-85bb-43cb-9588-bf37b23fff00"
+          LastKnownName="Se busca el nombre&#xD;&#xA;en la lista de visitas&#xD;&#xA;del día de hoy"
+          LastKnownLocation="Proyecto.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="98fcd9e5-8444-4780-802c-f2e1b5762fc9">
+      <body>Verificar su nombre dentro
+de las lista de visitantes
+anunciados</body>
+    </comment>
+    <comment
+      Id="edfcf1ac-2de1-47f0-9dbd-9274787cb27c">
+      <body>Hacer referencia al boceto de registro
+de visitas anunciadas</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="6c3ff4ba-54b7-4bdc-a049-5e15e1d97d52"
+          LastKnownName="Revisar la &#xD;&#xA;información &#xD;&#xA;suministrada"
+          LastKnownLocation="Proyecto.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="77a98718-a3d5-4cbb-a85b-7d18e2e2d48c">
+      <body>Prerequisitos
+
+1 El guardia de entrada peatonal
+ ha iniciado sesion en el
+sistema xyz.
+2. El guardia de entrada peatonal esta en la facilidad de
+ de registro de visitas no anunciadas.
+5. El visitante esta en la posta</body>
+      <annotatedElements>
+        <initialNodeMoniker
+          Id="5425cb94-f2a8-4444-8433-3e680b79287d"
+          LastKnownName="Initial1"
+          LastKnownLocation="Proyecto.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="9fb898e9-48d1-4fae-a29a-f80b2e0a4416">
+      <body>previo a este la base de datos contiene indentidades de las pasadas elecciones nacionales
+</body>
+      <annotatedElements>
+        <decisionNodeMoniker
+          Id="1b07b0a6-e13c-4305-b4c9-c25b6fd302dd"
+          LastKnownName="Decision1"
+          LastKnownLocation="Proyecto.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="4ef76d0d-088c-4556-b31f-9530b6e20d8c">
+      <body>este numero de carnet esta asignado solo para este visistante mientras su estadia</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="9c0bde3b-5588-4db5-a76d-3a05221f5d0f"
+          LastKnownName="Seleccionara el numero del carnet que se le asignara al visitante"
+          LastKnownLocation="Proyecto.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <activity
+        Id="1c2a0e79-ccd4-4490-9480-514ec23ec894"
+        name="Proceso General"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="ac44646c-0db2-4cf0-ac3f-b3f444ca663e"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="01549db6-3052-47d9-a55b-2f5272ff5434"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9d6bd160-f520-4933-ba54-ae7647bd8b1f"
+                  LastKnownName="Espera en una barrera"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="9d6bd160-f520-4933-ba54-ae7647bd8b1f"
+            name="Espera en una barrera"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="84af7fd9-a3e6-4370-a26a-150f7997193a"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="061b67a9-d722-4ce1-a42f-6d5c6413442b"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="289c048d-c183-438f-bbcf-0faf760163dc"
+            name="Solicitar carnet"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0d74348c-7da3-41f2-a0a2-7943006e68a2"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="535d859f-1f01-4547-9bad-6883b5a1e79a"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="9d05739a-1e5d-4e91-8dd9-02b5632b60bb"
+            name="Deslizar el carnet por el lector de codigo de barras"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d61f3180-bddf-47c6-842b-82779a43443b"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="cfcc6218-7a5e-483e-af9c-a201ca60b343"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="a890be38-377b-4dff-a743-45b977f09661"
+            name="Ingresar al campus"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6a0bd543-e9f9-46dc-a51d-a9d1a4f69068"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="7f69e0ab-d6a9-4ab6-9a90-4464c46f1ffe"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="79512e71-7ef6-45cd-9fb4-794e842bb806"
+            name="Decision4"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="bf6a73b4-37d3-49fe-a460-d008186c24bd"
+                guard="Foto coincide"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="cfcc6218-7a5e-483e-af9c-a201ca60b343"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="d14aaa1c-02a0-48df-a411-c2440953b636"
+                guard="Foto no coincide"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="8f8fd7ed-68a8-4f87-ba2f-bdc427cd069f"
+                  LastKnownName="Merge3"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode
+            Id="7f69e0ab-d6a9-4ab6-9a90-4464c46f1ffe"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="67ca6e8f-e22c-495c-bbf6-01ceb8b61afb"
+            name="Dar su nombre"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="fdb54630-b69d-42c5-838a-9d8aa627bcfc"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d81e2eb9-b50a-41c5-bc2d-8c27d7d36086"
+                  LastKnownName="Mencionar el proposito de la visita"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="d81e2eb9-b50a-41c5-bc2d-8c27d7d36086"
+            name="Mencionar el proposito de la visita"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1cfa255c-9db5-425f-9737-055a2d3bb017"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="feba34dd-77da-4896-960a-a1aab30c13ee"
+                  LastKnownName="Decision5"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="feba34dd-77da-4896-960a-a1aab30c13ee"
+            name="Decision5"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="cd439e61-fbab-4c31-952d-e8dd5e462073"
+                guard="Es una visita anunciada"
+                isLeaf="false">
+                <callBehaviorActionMoniker
+                  Id="0c6bdfb7-75be-464f-ad3b-cfff48b04714"
+                  LastKnownName="Verificar su nombre dentro&#xD;&#xA;de las lista de visitantes&#xD;&#xA;anunciados"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="7523b55f-b089-40dc-9a2e-c5ac78b553a8"
+                guard="No es una visita anunciada"
+                isLeaf="false">
+                <callBehaviorActionMoniker
+                  Id="66b28aed-09e3-45e4-9cce-189e123e3eef"
+                  LastKnownName="Registrar una visita no&#xD;&#xA;anunciada"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="b7fd8223-4b15-479f-aa77-113456219e1c"
+                guard=" [Nombre o propósito no registrados]"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="8f8fd7ed-68a8-4f87-ba2f-bdc427cd069f"
+                  LastKnownName="Merge3"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <mergeNode
+            Id="cfcc6218-7a5e-483e-af9c-a201ca60b343"
+            name="Merge1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c2b8edff-7c9c-4d78-8f5d-fd22cb0ccd3c"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="a890be38-377b-4dff-a743-45b977f09661"
+                  LastKnownName="Ingresar al campus"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <decisionNode
+            Id="535d859f-1f01-4547-9bad-6883b5a1e79a"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f008fe51-ada2-4bd2-a054-ef79720c3b03"
+                guard="Tiene carnet"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9d05739a-1e5d-4e91-8dd9-02b5632b60bb"
+                  LastKnownName="Deslizar el carnet por el lector de codigo de barras"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="085e467f-15aa-4b0e-835f-d1d9f383e799"
+                guard="No tiene carnet"
+                isLeaf="false">
+                <callBehaviorActionMoniker
+                  Id="3acd8a30-a9bf-4f8b-be7d-381fbcca8302"
+                  LastKnownName="Busca el alumno por numero de cuenta"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityParameterNode
+            Id="1f319a8d-3ca3-4940-905e-549883364977"
+            name="Persona"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="76131e02-4e56-467c-8b39-54bbc44990c3"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </activityParameterNode>
+          <activityParameterNode
+            Id="d2b8974a-a3fd-421c-82c6-e6deb6572322"
+            name="Alumno"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="af1f0098-8a65-4d03-a84c-b2511d59a3d2"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </activityParameterNode>
+          <activityParameterNode
+            Id="1e2bb82e-30aa-4e20-bbed-4ee843a9f20c"
+            name="Guardia de entrada peatonal/vehicular"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="1746cd44-6b6b-4933-88c5-cdd0016336e9"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </activityParameterNode>
+          <activityParameterNode
+            Id="e59d45b6-f269-412a-9b2c-5184015544da"
+            name="Visitante"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="d0bbda94-5f11-4ea7-a6f6-a8c749f00a1d"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </activityParameterNode>
+          <callBehaviorAction
+            Id="3acd8a30-a9bf-4f8b-be7d-381fbcca8302"
+            name="Busca el alumno por numero de cuenta"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="2ca7ed45-88a7-48c9-84a7-c79671441d08"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="79512e71-7ef6-45cd-9fb4-794e842bb806"
+                  LastKnownName="Decision4"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+            <behavior>
+              <activityMoniker
+                Id="1c2a0e79-ccd4-4490-9480-514ec23ec894"
+                LastKnownName="Proceso General"
+                LastKnownLocation="Proyecto.uml" />
+            </behavior>
+          </callBehaviorAction>
+          <callBehaviorAction
+            Id="0c6bdfb7-75be-464f-ad3b-cfff48b04714"
+            name="Verificar su nombre dentro&#xD;&#xA;de las lista de visitantes&#xD;&#xA;anunciados"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="921dd61e-891b-44d6-b04f-60b38e4549ef"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="7aa7a780-4ef3-4b09-a118-4526e1c1442c"
+                  LastKnownName="Merge2"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+            <behavior>
+              <activityMoniker
+                Id="1a948766-e142-493a-a55e-bf16568095b2"
+                LastKnownName="Verificar su nombre dentro"
+                LastKnownLocation="Proyecto.uml" />
+            </behavior>
+          </callBehaviorAction>
+          <decisionNode
+            Id="061b67a9-d722-4ce1-a42f-6d5c6413442b"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="51fdbec7-0dba-44c7-b1e1-34728e94663c"
+                guard="En alumno"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="289c048d-c183-438f-bbcf-0faf760163dc"
+                  LastKnownName="Solicitar carnet"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="2ea4c1e4-bdaa-4d08-ab6b-dd8ee709147b"
+                guard="Es visitante"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="67ca6e8f-e22c-495c-bbf6-01ceb8b61afb"
+                  LastKnownName="Dar su nombre"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <callBehaviorAction
+            Id="66b28aed-09e3-45e4-9cce-189e123e3eef"
+            name="Registrar una visita no&#xD;&#xA;anunciada"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1e315f7c-1c38-465a-9fca-9078b087255e"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="7aa7a780-4ef3-4b09-a118-4526e1c1442c"
+                  LastKnownName="Merge2"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+            <behavior>
+              <activityMoniker
+                Id="170842be-3ffe-46d0-af64-394c77ff4a3e"
+                LastKnownName="Registrar una visita no"
+                LastKnownLocation="Proyecto.uml" />
+            </behavior>
+          </callBehaviorAction>
+          <mergeNode
+            Id="7aa7a780-4ef3-4b09-a118-4526e1c1442c"
+            name="Merge2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="78ef03d5-446c-4bda-ae9a-cf88946afb30"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="cfcc6218-7a5e-483e-af9c-a201ca60b343"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <opaqueAction
+            Id="26b7a0f9-9ccd-4cba-bdcd-a1e0e18bd7fc"
+            name="Negar entrada al campus"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="35ac27d1-e6ce-4dff-b655-105c18a55c9f"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="fc332417-d0c6-49e2-801d-e81466e9b301"
+                  LastKnownName="ActivityFinal2"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="fc332417-d0c6-49e2-801d-e81466e9b301"
+            name="ActivityFinal2"
+            isLeaf="false" />
+          <mergeNode
+            Id="8f8fd7ed-68a8-4f87-ba2f-bdc427cd069f"
+            name="Merge3"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="dc071faf-731b-4b00-b56e-5e52dea6ee96"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="26b7a0f9-9ccd-4cba-bdcd-a1e0e18bd7fc"
+                  LastKnownName="Negar entrada al campus"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="1a948766-e142-493a-a55e-bf16568095b2"
+        name="Verificar su nombre dentro"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <activityParameterNode
+            Id="1a5b79f1-0207-4c44-9a48-8abb63049e39"
+            name="Visitante anunciado"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="f154dcb1-d35a-498b-a272-6b6d9ee8a437"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </activityParameterNode>
+          <activityParameterNode
+            Id="2d08904f-0432-4df2-849f-72fc902ee781"
+            name="Guardia de entrada peatonal/vehicular"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="9af32d6d-10cf-406d-8462-b6af50d2d25f"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </activityParameterNode>
+          <initialNode
+            Id="2f4b7051-ef03-4b2c-9b74-54eedb717b2c"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="91b8ef65-457f-4c6b-8883-696173db13d0"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e33a2d19-5189-41ea-87e8-e8323fa0bf35"
+                  LastKnownName="El sistema detecta en&#xD;&#xA;que posta (entrada/salida) esta el usuario&#xD;&#xA;que acaba de iniciar sesion"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="e33a2d19-5189-41ea-87e8-e8323fa0bf35"
+            name="El sistema detecta en&#xD;&#xA;que posta (entrada/salida) esta el usuario&#xD;&#xA;que acaba de iniciar sesion"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="af42bfc4-f253-4b50-9f51-13ad65be420d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1c8ad80d-b741-4601-8c33-c1b28f5a5344"
+                  LastKnownName="Brinda su nombre"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="1c8ad80d-b741-4601-8c33-c1b28f5a5344"
+            name="Brinda su nombre"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="cb855a2e-9041-484b-b86c-03bf001fe920"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="047cb689-85bb-43cb-9588-bf37b23fff00"
+                  LastKnownName="Se busca el nombre&#xD;&#xA;en la lista de visitas&#xD;&#xA;del día de hoy"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="047cb689-85bb-43cb-9588-bf37b23fff00"
+            name="Se busca el nombre&#xD;&#xA;en la lista de visitas&#xD;&#xA;del día de hoy"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="768ddae5-f573-4099-9bb7-1076f086a5e7"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="bb829775-111b-46bb-84ed-5754949a4c99"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="bb829775-111b-46bb-84ed-5754949a4c99"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5864e9a3-67d7-43b2-9129-10bf0610c2d8"
+                guard=" Nombre no encontrado"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b6c3d053-df81-49b1-a296-b847eea82b7d"
+                  LastKnownName="Se autoriza&#xD;&#xA;Ingreso o &#xD;&#xA;salida"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="07731aac-e971-4c7d-9154-257e6b934e33"
+                guard="Nombre no encontrado"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="fc84d7b5-9b71-48f2-9590-8eddc2d193f2"
+                  LastKnownName="Se niega la&#xD;&#xA;entrada al campus"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="b6c3d053-df81-49b1-a296-b847eea82b7d"
+            name="Se autoriza&#xD;&#xA;Ingreso o &#xD;&#xA;salida"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0bb80a73-5279-4882-b457-f02ffbc7a2e2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="6137f3ef-beb6-4b70-9461-d01f93085ebd"
+                  LastKnownName="Entra o sale del&#xD;&#xA;campus"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="fc84d7b5-9b71-48f2-9590-8eddc2d193f2"
+            name="Se niega la&#xD;&#xA;entrada al campus"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4d102dd8-9583-4440-a5d2-469d665b88ce"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="39cd66a6-15fb-47d5-9ab5-33b6dbfde97c"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="39cd66a6-15fb-47d5-9ab5-33b6dbfde97c"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="6137f3ef-beb6-4b70-9461-d01f93085ebd"
+            name="Entra o sale del&#xD;&#xA;campus"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="45611b10-1f0e-47c7-8cee-12348023d256"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="da5ecfb3-c470-4848-bfe3-d40223b34a6e"
+                  LastKnownName="ActivityFinal2"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="da5ecfb3-c470-4848-bfe3-d40223b34a6e"
+            name="ActivityFinal2"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="170842be-3ffe-46d0-af64-394c77ff4a3e"
+        name="Registrar una visita no"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="30f6bd7d-54e8-46e9-87fb-d85b55136b8d"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c6b79a06-64c5-47d7-9a02-655889ed22cb"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="27e4739a-256b-43bc-ac28-5441ac8778c1"
+                  LastKnownName="Seleccionar el&#xD;&#xA;campus donde&#xD;&#xA;entrarán las&#xD;&#xA;visitas"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="27e4739a-256b-43bc-ac28-5441ac8778c1"
+            name="Seleccionar el&#xD;&#xA;campus donde&#xD;&#xA;entrarán las&#xD;&#xA;visitas"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5eaba5fa-845d-436c-94b0-e44459dae89c"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="5cd499ac-e3d3-4fbd-ab32-f33428deaff5"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode
+            Id="5cd499ac-e3d3-4fbd-ab32-f33428deaff5"
+            name="Merge1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1d27409f-a9b9-47cc-8952-b88a5a9434ee"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="be143b0a-9fb3-494e-b6d6-9a3eb467fc8c"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <opaqueAction
+            Id="7242cbbf-e1a4-4568-9597-d9b0668337a6"
+            name="Especificar el nombre"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e5c80508-d877-4175-93af-f7902562f169"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3cd961a4-f171-4652-9f46-05a07e0a6ecd"
+                  LastKnownName="Especificar tipo&#xD;&#xA;de entrada&#xD;&#xA;(Vehicular o peatonal)"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="3cd961a4-f171-4652-9f46-05a07e0a6ecd"
+            name="Especificar tipo&#xD;&#xA;de entrada&#xD;&#xA;(Vehicular o peatonal)"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="fe99f11c-fe2e-4338-acfc-9b3f1492b745"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="2904b23b-424e-40f7-993f-c4f1130bc6e2"
+                  LastKnownName="Merge3"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode
+            Id="2904b23b-424e-40f7-993f-c4f1130bc6e2"
+            name="Merge3"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="083a3dc1-7f59-4ae6-9c93-a2b7c069918f"
+                guard="Todas las personas registradas"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="109fb4ba-c33b-4f4a-98a0-03948781fe14"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <decisionNode
+            Id="be143b0a-9fb3-494e-b6d6-9a3eb467fc8c"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5999cc9a-e4a6-4804-b8e2-526943469909"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7242cbbf-e1a4-4568-9597-d9b0668337a6"
+                  LastKnownName="Especificar el nombre"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="d2769af4-493f-4ddc-85c5-416c14f29a32"
+                guard="Hay más personas"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="2904b23b-424e-40f7-993f-c4f1130bc6e2"
+                  LastKnownName="Merge3"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="5b6d367c-05e4-445c-9b50-1628dc537ead"
+                guard="Hay información por corregir"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="4d350895-8185-4dab-a7ce-251183520c7f"
+                  LastKnownName="Merge4"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode
+            Id="109fb4ba-c33b-4f4a-98a0-03948781fe14"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1e7e3ead-6df4-4a27-a9e6-b5b835e7e7d2"
+                guard="Hay observaciones"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="66416a22-5f2b-4e82-9a5d-2ad429969122"
+                  LastKnownName="Ingresar las&#xD;&#xA;observaciones"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="6d9148a3-f310-41d6-ab35-7763b64ccd0e"
+                guard="No hay observaciones"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="0cd93782-d674-4c49-be9f-1dc8fed3a893"
+                  LastKnownName="Merge2"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="66416a22-5f2b-4e82-9a5d-2ad429969122"
+            name="Ingresar las&#xD;&#xA;observaciones"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="14c48d27-70e3-43b7-9fb3-741cdb4f4c20"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="0cd93782-d674-4c49-be9f-1dc8fed3a893"
+                  LastKnownName="Merge2"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="6c3ff4ba-54b7-4bdc-a049-5e15e1d97d52"
+            name="Revisar la &#xD;&#xA;información &#xD;&#xA;suministrada"
+            isLeaf="false" />
+          <mergeNode
+            Id="0cd93782-d674-4c49-be9f-1dc8fed3a893"
+            name="Merge2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="72428bc1-6138-42e0-9f3e-dfb235b8ced2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="6c3ff4ba-54b7-4bdc-a049-5e15e1d97d52"
+                  LastKnownName="Revisar la &#xD;&#xA;información &#xD;&#xA;suministrada"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <opaqueAction
+            Id="d9723854-164f-4e5d-b868-2d0931238cf5"
+            name="Autorizar las &#xD;&#xA;visitas"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="37de7632-d6e2-4513-ae1f-68a4194ca9e3"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="e91d5c1f-81fd-4739-80db-457845b14216"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="e91d5c1f-81fd-4739-80db-457845b14216"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <mergeNode
+            Id="4d350895-8185-4dab-a7ce-251183520c7f"
+            name="Merge4"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ab3e17f4-7637-43be-ad56-ed2e0c4a9223"
+                guard="Infromación correcta"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d9723854-164f-4e5d-b868-2d0931238cf5"
+                  LastKnownName="Autorizar las &#xD;&#xA;visitas"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="93537443-b289-4500-bc93-919e5cdd9c5a"
+        name="Registro de visitas no anunciadas"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="5425cb94-f2a8-4444-8433-3e680b79287d"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b9ce1e18-0287-497a-88cc-b4bcc04c093e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="07dbcbc7-8723-4af9-b5cc-c6096fc6737c"
+                  LastKnownName="Ingresa la identidad de la visita no anunciada"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="07dbcbc7-8723-4af9-b5cc-c6096fc6737c"
+            name="Ingresa la identidad de la visita no anunciada"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f4b16084-f2c1-423c-bba5-8cc50aaaeba9"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="1b07b0a6-e13c-4305-b4c9-c25b6fd302dd"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="1b07b0a6-e13c-4305-b4c9-c25b6fd302dd"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9831934d-3e86-4764-a04e-40dec312d4f7"
+                guard="El visitante esta en la base de datos"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="27e31ce5-0b6a-470a-9e62-608547a22b2f"
+                  LastKnownName="Seleccionara el departamento de unitec que el visitante se dirige"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="166a4ae8-3de6-4cb0-9494-4ae25f80f04e"
+                guard="El visitante no esta en la base de datos"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="4d7ee49f-0af7-45a4-a846-c13c8dbc768b"
+                  LastKnownName="Action2"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="27e31ce5-0b6a-470a-9e62-608547a22b2f"
+            name="Seleccionara el departamento de unitec que el visitante se dirige"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="83b3069d-56ff-46be-bdc1-9fb77ab1ec9a"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9c0bde3b-5588-4db5-a76d-3a05221f5d0f"
+                  LastKnownName="Seleccionara el numero del carnet que se le asignara al visitante"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="4d7ee49f-0af7-45a4-a846-c13c8dbc768b"
+            name="Action2"
+            isLeaf="false" />
+          <activityParameterNode
+            Id="e7c4c979-071c-4833-9d48-88eacf76200e"
+            name="Visittante no anunciado"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="373f3e4d-c434-4533-a953-83bdd051901c"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </activityParameterNode>
+          <activityParameterNode
+            Id="5d91a1e1-1301-48ac-8525-c908aef53d87"
+            name="Guardia de entrada peatonal"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="a0cd14cc-11f7-4afe-9051-30124e68219a"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </activityParameterNode>
+          <opaqueAction
+            Id="9c0bde3b-5588-4db5-a76d-3a05221f5d0f"
+            name="Seleccionara el numero del carnet que se le asignara al visitante"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9b31f291-d264-4773-9463-cbfa2af4d46e"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="60a93596-e6be-4f3f-a3c5-6befb4997447"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="60a93596-e6be-4f3f-a3c5-6befb4997447"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="582a94f2-8491-433f-bfdc-ee519bbbf4f1"
+                guard="Hay observaciones"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="4783ed3d-74fe-4779-acdc-ecf877563965"
+                  LastKnownName="Ingresar las&#xD;&#xA;observaciones"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="36780c96-ac86-4c09-9273-513ab712e472"
+                guard="No hay observaciones"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="64a848fa-7c44-4170-b431-48b228ee1ed2"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="4783ed3d-74fe-4779-acdc-ecf877563965"
+            name="Ingresar las&#xD;&#xA;observaciones"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9facc722-1c2a-44de-8cbe-0dcde1fa433a"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="64a848fa-7c44-4170-b431-48b228ee1ed2"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode
+            Id="64a848fa-7c44-4170-b431-48b228ee1ed2"
+            name="Merge1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3c0ebb3b-a458-41fc-8949-f9264014f871"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f439e3f4-9344-4797-8aa9-838a8b95ca3a"
+                  LastKnownName="Autoriza la entrada del visitante no aunciado al campus"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <opaqueAction
+            Id="f439e3f4-9344-4797-8aa9-838a8b95ca3a"
+            name="Autoriza la entrada del visitante no aunciado al campus"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3db05c6a-674c-4e92-9aac-a1e4a689a417"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="09889ec5-3101-4d60-b0a4-edf2e031dfd8"
+                  LastKnownName="El visitante no anunciado entra al campus"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="c8f72b12-f4d5-4907-9347-ccce3e1bbb31"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="09889ec5-3101-4d60-b0a4-edf2e031dfd8"
+            name="El visitante no anunciado entra al campus"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="606368d8-3db8-4ce1-9284-7031e0178153"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="c8f72b12-f4d5-4907-9347-ccce3e1bbb31"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

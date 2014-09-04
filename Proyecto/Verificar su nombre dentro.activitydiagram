@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="ecf7868b-2ce5-4583-94ec-be59b1de1b9d" name="Verificar su nombre dentro" linkedPackageId="e5970e77-8948-4f56-b3fb-c80205ea6ed9" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="d2d0e6c7-b308-4334-a602-06c65c06c949">
+      <elementDefinition Id="a4de452e-a1a2-4eaa-91fe-4866ec90a0cc" />
+      <body>Prerequisitos
+1. El visitante ya ha sido 
+    registrado en el sistema xyz,
+    facilidad registro de visitas
+    anunciadas.
+2. El guardia de entrada peatonal
+vehicular ha iniciado sesion en el
+sistema xyz.
+3. El guardia de entrada peatonal
+vehicular esta en la facilidad de
+ingreso de visitas anunciadas
+4. El visitante esta en la posta</body>
+      <annotatedElements>
+        <initialNodeMoniker Id="8d29a51b-273e-49fa-a7b5-fc73e137f08d" LastKnownName="Initial1" />
+      </annotatedElements>
+    </comment>
+    <comment Id="f71abd16-213d-4b8a-841e-58d1c23f75be">
+      <elementDefinition Id="f2264b4d-eef7-4ccc-ac06-53ca1bf99caf" />
+      <body>Favor ver boceto de 
+codigo del boceto  de 
+visitas anunciadas con sus
+criterios de aceptacion</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="9f197137-1fc2-4789-9511-9df063a7d4b5" LastKnownName="Se busca el nombre&#xD;&#xA;en la lista de visitas&#xD;&#xA;del día de hoy" />
+      </annotatedElements>
+    </comment>
+    <comment Id="9fa28362-2bd3-4c1b-93c9-246c688a4841">
+      <elementDefinition Id="98fcd9e5-8444-4780-802c-f2e1b5762fc9" />
+      <body>Verificar su nombre dentro
+de las lista de visitantes
+anunciados</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="e5b6638d-a68e-475b-9c59-0bbb803e06ea" name="Verificar su nombre dentro" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="1a948766-e142-493a-a55e-bf16568095b2" />
+        <nodes>
+          <activityParameterNode Id="b9ea482c-a1ca-404a-9752-37dbdb231f39" name="Visitante anunciado" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="1a5b79f1-0207-4c44-9a48-8abb63049e39" />
+            <upperBound>
+              <literalInteger Id="2e033a3a-b26b-4239-93e0-5b4d557f558b" name="2147483647" value="2147483647">
+                <elementDefinition Id="f154dcb1-d35a-498b-a272-6b6d9ee8a437" />
+              </literalInteger>
+            </upperBound>
+          </activityParameterNode>
+          <activityParameterNode Id="4f7672cd-6bb7-4516-be74-50a03768cea5" name="Guardia de entrada peatonal/vehicular" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="2d08904f-0432-4df2-849f-72fc902ee781" />
+            <upperBound>
+              <literalInteger Id="e184e451-f76a-4121-a17a-a43486302deb" name="2147483647" value="2147483647">
+                <elementDefinition Id="9af32d6d-10cf-406d-8462-b6af50d2d25f" />
+              </literalInteger>
+            </upperBound>
+          </activityParameterNode>
+          <initialNode Id="8d29a51b-273e-49fa-a7b5-fc73e137f08d" name="Initial1" isLeaf="false">
+            <elementDefinition Id="2f4b7051-ef03-4b2c-9b74-54eedb717b2c" />
+            <flowNodeTargets>
+              <controlFlow Id="c2d4e76a-81bd-4c0a-a2ff-629c7c1b8334" isLeaf="false">
+                <opaqueActionMoniker Id="b44e4ff0-0215-4a1e-ad1b-392e3569bc42" LastKnownName="El sistema detecta en&#xD;&#xA;que posta (entrada/salida) esta el usuario&#xD;&#xA;que acaba de iniciar sesion" />
+                <elementDefinition Id="91b8ef65-457f-4c6b-8883-696173db13d0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="b44e4ff0-0215-4a1e-ad1b-392e3569bc42" name="El sistema detecta en&#xD;&#xA;que posta (entrada/salida) esta el usuario&#xD;&#xA;que acaba de iniciar sesion" isLeaf="false">
+            <elementDefinition Id="e33a2d19-5189-41ea-87e8-e8323fa0bf35" />
+            <flowNodeTargets>
+              <controlFlow Id="03eb60f8-d2d6-4b50-a6c3-1f9b507c90ad" isLeaf="false">
+                <opaqueActionMoniker Id="705e5e41-a453-4acb-84ad-56c9e2dfc6bf" LastKnownName="Brinda su nombre" />
+                <elementDefinition Id="af42bfc4-f253-4b50-9f51-13ad65be420d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="705e5e41-a453-4acb-84ad-56c9e2dfc6bf" name="Brinda su nombre" isLeaf="false">
+            <elementDefinition Id="1c8ad80d-b741-4601-8c33-c1b28f5a5344" />
+            <flowNodeTargets>
+              <controlFlow Id="9d74ee28-cb47-422b-9bf5-2da894f6e0b9" isLeaf="false">
+                <opaqueActionMoniker Id="9f197137-1fc2-4789-9511-9df063a7d4b5" LastKnownName="Se busca el nombre&#xD;&#xA;en la lista de visitas&#xD;&#xA;del día de hoy" />
+                <elementDefinition Id="cb855a2e-9041-484b-b86c-03bf001fe920" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="9f197137-1fc2-4789-9511-9df063a7d4b5" name="Se busca el nombre&#xD;&#xA;en la lista de visitas&#xD;&#xA;del día de hoy" isLeaf="false">
+            <elementDefinition Id="047cb689-85bb-43cb-9588-bf37b23fff00" />
+            <flowNodeTargets>
+              <controlFlow Id="13b78256-6052-4d41-bb1f-76fe25f1aede" isLeaf="false">
+                <decisionNodeMoniker Id="23f0861e-0edd-44e3-bdef-02da1c0953e2" LastKnownName="Decision1" />
+                <elementDefinition Id="768ddae5-f573-4099-9bb7-1076f086a5e7" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="23f0861e-0edd-44e3-bdef-02da1c0953e2" name="Decision1" isLeaf="false">
+            <elementDefinition Id="bb829775-111b-46bb-84ed-5754949a4c99" />
+            <flowNodeTargets>
+              <controlFlow Id="bcb9714a-7272-4f86-98d1-298df41e5d4d" guard=" Nombre no encontrado" isLeaf="false">
+                <opaqueActionMoniker Id="fea75766-5aec-412d-a525-075cdac489c4" LastKnownName="Se autoriza&#xD;&#xA;Ingreso o &#xD;&#xA;salida" />
+                <elementDefinition Id="5864e9a3-67d7-43b2-9129-10bf0610c2d8" />
+              </controlFlow>
+              <controlFlow Id="01956943-cedc-4d9b-8fc0-578ae532d1a9" guard="Nombre no encontrado" isLeaf="false">
+                <opaqueActionMoniker Id="8acf01e1-f220-4498-ba8c-055af239ecfe" LastKnownName="Se niega la&#xD;&#xA;entrada al campus" />
+                <elementDefinition Id="07731aac-e971-4c7d-9154-257e6b934e33" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="fea75766-5aec-412d-a525-075cdac489c4" name="Se autoriza&#xD;&#xA;Ingreso o &#xD;&#xA;salida" isLeaf="false">
+            <elementDefinition Id="b6c3d053-df81-49b1-a296-b847eea82b7d" />
+            <flowNodeTargets>
+              <controlFlow Id="20612fd8-c2e1-441c-a320-6af8e17fe16e" isLeaf="false">
+                <opaqueActionMoniker Id="94e2ada9-5899-481c-a2e0-e034b86c7a31" LastKnownName="Entra o sale del&#xD;&#xA;campus" />
+                <elementDefinition Id="0bb80a73-5279-4882-b457-f02ffbc7a2e2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="8acf01e1-f220-4498-ba8c-055af239ecfe" name="Se niega la&#xD;&#xA;entrada al campus" isLeaf="false">
+            <elementDefinition Id="fc84d7b5-9b71-48f2-9590-8eddc2d193f2" />
+            <flowNodeTargets>
+              <controlFlow Id="29fc0cbf-6257-4f24-bc7e-62ce7957e49c" isLeaf="false">
+                <activityFinalNodeMoniker Id="6d19b917-a578-4ed3-ad57-025d4113f3a4" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="4d102dd8-9583-4440-a5d2-469d665b88ce" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="6d19b917-a578-4ed3-ad57-025d4113f3a4" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="39cd66a6-15fb-47d5-9ab5-33b6dbfde97c" />
+          </activityFinalNode>
+          <opaqueAction Id="94e2ada9-5899-481c-a2e0-e034b86c7a31" name="Entra o sale del&#xD;&#xA;campus" isLeaf="false">
+            <elementDefinition Id="6137f3ef-beb6-4b70-9461-d01f93085ebd" />
+            <flowNodeTargets>
+              <controlFlow Id="f2aa5d4d-1370-470a-98fc-e2b8dff10854" isLeaf="false">
+                <activityFinalNodeMoniker Id="352e07ec-5f04-42c4-bef0-fe8ec533d7b6" LastKnownName="ActivityFinal2" />
+                <elementDefinition Id="45611b10-1f0e-47c7-8cee-12348023d256" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="352e07ec-5f04-42c4-bef0-fe8ec533d7b6" name="ActivityFinal2" isLeaf="false">
+            <elementDefinition Id="da5ecfb3-c470-4848-bfe3-d40223b34a6e" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="e5970e77-8948-4f56-b3fb-c80205ea6ed9" name="Proyecto">
+    <elementDefinition Id="6b93e885-3e82-4e76-97aa-57cbc7854abd" />
+    <profileInstances>
+      <packageHasProfileInstances Id="01d20594-ab34-4b69-a26f-deb12f73b726">
+        <profileInstance Id="cd54ac26-d73b-4a10-9d96-35184444d4cd" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="04bac750-14f2-480f-a536-c4c9c50a366f">
+        <profileInstance Id="a283eb34-ae89-44c4-9735-6ac9435fa49a" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>
