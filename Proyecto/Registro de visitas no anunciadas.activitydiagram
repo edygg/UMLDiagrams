@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="160b847d-7537-4caa-8f6f-9cead6a114a8" name="Registro de visitas no anunciadas" linkedPackageId="6c778d6b-f698-4a3b-b4e7-741fad2226fe" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="83d12547-193a-4ace-86fa-c489582d0949">
+      <profileInstance Id="27b94e67-1423-4116-92b3-79555db3952a" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="fdd29744-0f22-483f-bf30-324d51e28a67">
+      <profileInstance Id="f3bc53f7-df37-489a-b29c-85f87bbd6335" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="6117fd62-c6f9-48a2-90d3-e0d8601a2ba9" name="Registro de visitas no anunciadas" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="93537443-b289-4500-bc93-919e5cdd9c5a" />
+        <nodes>
+          <initialNode Id="a76c2847-157e-45b2-8fe6-5c42ac1b82ee" name="Initial1" isLeaf="false">
+            <elementDefinition Id="5425cb94-f2a8-4444-8433-3e680b79287d" />
+            <flowNodeTargets>
+              <controlFlow Id="5e24dd12-2e08-4a98-8e3d-38d2f3c5a480" isLeaf="false">
+                <opaqueActionMoniker Id="8827c55a-19d5-4b5e-bde2-7d0d5cec7572" LastKnownName="Ingresa la identidad de la visita no anunciada" />
+                <elementDefinition Id="b9ce1e18-0287-497a-88cc-b4bcc04c093e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="8827c55a-19d5-4b5e-bde2-7d0d5cec7572" name="Ingresa la identidad de la visita no anunciada" isLeaf="false">
+            <elementDefinition Id="07dbcbc7-8723-4af9-b5cc-c6096fc6737c" />
+            <flowNodeTargets>
+              <controlFlow Id="4c4fcf51-1cd3-4074-908d-278d724dfab0" isLeaf="false">
+                <decisionNodeMoniker Id="7387cd2c-d6b8-46b9-ad28-13c2e23d7452" LastKnownName="Decision1" />
+                <elementDefinition Id="f4b16084-f2c1-423c-bba5-8cc50aaaeba9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="7387cd2c-d6b8-46b9-ad28-13c2e23d7452" name="Decision1" isLeaf="false">
+            <elementDefinition Id="1b07b0a6-e13c-4305-b4c9-c25b6fd302dd" />
+            <flowNodeTargets>
+              <controlFlow Id="07613b19-db04-4dcf-8db3-37fe9fbdb0d3" isLeaf="false">
+                <opaqueActionMoniker Id="aaf2f510-5d95-4be8-b32b-a6ff81a63774" LastKnownName="Action1" />
+                <elementDefinition Id="9831934d-3e86-4764-a04e-40dec312d4f7" />
+              </controlFlow>
+              <controlFlow Id="bc5307cd-7f1b-46aa-b626-3050d8b5854f" isLeaf="false">
+                <opaqueActionMoniker Id="8b4fb307-bd49-4943-ad36-3f0556c62bc4" LastKnownName="Action2" />
+                <elementDefinition Id="166a4ae8-3de6-4cb0-9494-4ae25f80f04e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="aaf2f510-5d95-4be8-b32b-a6ff81a63774" name="Action1" isLeaf="false">
+            <elementDefinition Id="27e31ce5-0b6a-470a-9e62-608547a22b2f" />
+          </opaqueAction>
+          <opaqueAction Id="8b4fb307-bd49-4943-ad36-3f0556c62bc4" name="Action2" isLeaf="false">
+            <elementDefinition Id="4d7ee49f-0af7-45a4-a846-c13c8dbc768b" />
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="6c778d6b-f698-4a3b-b4e7-741fad2226fe" name="Proyecto">
+    <elementDefinition Id="6b93e885-3e82-4e76-97aa-57cbc7854abd" />
+  </package>
+</activityRootModel>
