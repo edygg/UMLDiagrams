@@ -1,5 +1,144 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="74063992-d289-4cc6-901e-c681ad302840" name="Busca el alumno por numero de cuenta" linkedPackageId="80461270-a707-4aad-a949-cdc96dbaad2b" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="757d4899-e7e8-4f48-a413-6c8b2790a322">
+      <elementDefinition Id="598d6ef3-019d-4ba8-bec6-c12e61fac51f" />
+      <body>Prerequisitos
+
+1 El guardia de entrada peatonal
+ ha iniciado sesion en el
+sistema xyz.
+2. El guardia de entrada peatonal esta en la facilidad de
+ de registro de visitas no anunciadas.
+5. El Estudiante esta en la posta</body>
+      <annotatedElements>
+        <initialNodeMoniker Id="e13bc6f0-5171-44f1-993b-4e1d7ce136be" LastKnownName="Initial1" />
+      </annotatedElements>
+    </comment>
+    <comment Id="b0e27323-4e89-49f5-bc5a-d37499519da0">
+      <elementDefinition Id="afae6e0f-7b5c-4688-a48b-493637dca8f5" />
+      <body>Revisar FormaASC1
+</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="4aebf6c9-b990-4782-8062-5bad9b23b3c7" LastKnownName="Muestra la datos del estudiante" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="155518c0-7e15-4712-81e9-5881d3d56db0" name="Busca el alumno por numero de cuenta" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="752fe9d1-19f4-4a29-bff7-cd72aee00f5e" />
+        <nodes>
+          <initialNode Id="e13bc6f0-5171-44f1-993b-4e1d7ce136be" name="Initial1" isLeaf="false">
+            <elementDefinition Id="2f9d4c92-60f9-4596-8625-605d3cc49e14" />
+            <flowNodeTargets>
+              <controlFlow Id="9fb8dbfb-d6d3-4dd1-abb9-fde1d51adf84" isLeaf="false">
+                <opaqueActionMoniker Id="292156e5-7836-41fe-bf53-6f6c6808e751" LastKnownName="Introduce el numero de cuenta del estudiante" />
+                <elementDefinition Id="70d8da35-57f6-4c03-805e-d9e5c67ba3b0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityParameterNode Id="a038eb9a-8e99-415d-b988-6af52b6e17ea" name="Estudiante" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="46bc6aa2-3a44-4192-8c85-eed534213516" />
+            <upperBound>
+              <literalInteger Id="058bd62a-158e-4a2a-9927-1a698a6cc1df" name="2147483647" value="2147483647">
+                <elementDefinition Id="a30a20e2-92ef-44b2-8200-9d679b8842f1" />
+              </literalInteger>
+            </upperBound>
+          </activityParameterNode>
+          <activityParameterNode Id="4f4067b7-14fa-4129-b231-a55190ebc9c6" name="Guardia de entrada peatonal" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="3caae0dc-2562-4aef-ad2e-2eb743d29443" />
+            <upperBound>
+              <literalInteger Id="c86a0c0d-3dc6-4c7a-96bb-8f45408e4cfa" name="2147483647" value="2147483647">
+                <elementDefinition Id="6914a0a3-1766-4ff2-a914-5254500dafec" />
+              </literalInteger>
+            </upperBound>
+          </activityParameterNode>
+          <opaqueAction Id="292156e5-7836-41fe-bf53-6f6c6808e751" name="Introduce el numero de cuenta del estudiante" isLeaf="false">
+            <elementDefinition Id="2b6e6cd0-97c1-4833-9333-d661ab1528ff" />
+            <flowNodeTargets>
+              <controlFlow Id="5aa24c16-f163-444e-ac30-6112adf2095d" isLeaf="false">
+                <decisionNodeMoniker Id="1e29a1cb-6991-4187-9125-bd931b29f27b" LastKnownName="Decision1" />
+                <elementDefinition Id="cf433b50-555f-4839-a77c-432ece463f28" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="1e29a1cb-6991-4187-9125-bd931b29f27b" name="Decision1" isLeaf="false">
+            <elementDefinition Id="7ac74bef-c44b-4493-b20f-a087069968d8" />
+            <flowNodeTargets>
+              <controlFlow Id="518bbef2-0483-4c45-96da-9ba24f377c79" guard="el numero de cuenta coincide" isLeaf="false">
+                <opaqueActionMoniker Id="4aebf6c9-b990-4782-8062-5bad9b23b3c7" LastKnownName="Muestra la datos del estudiante" />
+                <elementDefinition Id="d3c2e73a-0a31-4dcc-afc9-2bc2e61a5e53" />
+              </controlFlow>
+              <controlFlow Id="56ba1591-4625-45e6-838a-8c7caa935669" guard="El numero de cuenta no coincide" isLeaf="false">
+                <opaqueActionMoniker Id="95278c27-da24-4b17-9d5b-535bdcb70b36" LastKnownName="Mostrar una alerta de no coincidencia de numero de cuenta" />
+                <elementDefinition Id="952664a7-da59-4e8d-b592-a34feacdd5c4" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="4aebf6c9-b990-4782-8062-5bad9b23b3c7" name="Muestra la datos del estudiante" isLeaf="false">
+            <elementDefinition Id="4313cf9e-1761-48a2-823e-03aa371c4197" />
+            <flowNodeTargets>
+              <controlFlow Id="b36cb872-fb25-4465-ae95-d43c88c357b0" isLeaf="false">
+                <opaqueActionMoniker Id="b2f1cd0c-26eb-4f73-aef7-385638dee871" LastKnownName="Autoriza la entrada el estudiante" />
+                <elementDefinition Id="96ccbe91-81c3-4f4e-8729-19ed9697d9da" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="95278c27-da24-4b17-9d5b-535bdcb70b36" name="Mostrar una alerta de no coincidencia de numero de cuenta" isLeaf="false">
+            <elementDefinition Id="dc0ff883-94ec-46e9-a99b-436756ebcbca" />
+            <flowNodeTargets>
+              <controlFlow Id="65030327-4257-4b27-8364-274c0cfcee65" isLeaf="false">
+                <opaqueActionMoniker Id="11d6e7d8-6de0-47f9-8c3a-21cbbbc7fa14" LastKnownName="Negar entrada" />
+                <elementDefinition Id="1f5c04cb-270a-4627-b40e-de1807a15216" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityParameterNode Id="23aae0ad-6cf8-436d-a799-b638ed96ebdb" name="Systema xyz" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="a5c05cf5-207e-46ea-9956-ee6cc3a2caee" />
+            <upperBound>
+              <literalInteger Id="3037630c-af45-4190-acdf-6614399b7580" name="2147483647" value="2147483647">
+                <elementDefinition Id="47bc1044-7ee4-4cf0-8030-a4b2cf9cb43b" />
+              </literalInteger>
+            </upperBound>
+          </activityParameterNode>
+          <opaqueAction Id="11d6e7d8-6de0-47f9-8c3a-21cbbbc7fa14" name="Negar entrada" isLeaf="false">
+            <elementDefinition Id="f7af551a-3d1e-4704-b1b3-0ae7f604c8eb" />
+            <flowNodeTargets>
+              <controlFlow Id="13c306f6-2cb8-45c5-9e7e-4a862ef12977" isLeaf="false">
+                <activityFinalNodeMoniker Id="c906b00f-7721-4da6-b49e-584a8a31a4d9" LastKnownName="ActivityFinal11" />
+                <elementDefinition Id="66819fa8-5a94-4a83-acda-279e66880dcf" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="8c29dbbe-1606-48db-875a-15c2e0aadd29" name="Entra al campus" isLeaf="false">
+            <elementDefinition Id="e2911608-4f09-44e7-9ce8-876ba93fa7ad" />
+            <flowNodeTargets>
+              <controlFlow Id="4fe43cb1-c4cb-4a92-9ee3-d2fa8408ef95" isLeaf="false">
+                <activityFinalNodeMoniker Id="ff7c4998-1014-428a-ad34-93edb8ff0e7e" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="b8427b8a-f01d-423d-ab4e-8a5e44811f80" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="b2f1cd0c-26eb-4f73-aef7-385638dee871" name="Autoriza la entrada el estudiante" isLeaf="false">
+            <elementDefinition Id="6146c260-2a0b-4111-9e8f-96a672ec9d8a" />
+            <flowNodeTargets>
+              <controlFlow Id="e55e09ea-70c5-4403-bd24-d6db42de0b80" isLeaf="false">
+                <opaqueActionMoniker Id="8c29dbbe-1606-48db-875a-15c2e0aadd29" LastKnownName="Entra al campus" />
+                <elementDefinition Id="9ca48a9c-6ffd-4f69-b8b0-93be1a7d4ca8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="ff7c4998-1014-428a-ad34-93edb8ff0e7e" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="19f60db7-a5d1-4ddd-ac6d-630d09f6bdfd" />
+          </activityFinalNode>
+          <activityFinalNode Id="c906b00f-7721-4da6-b49e-584a8a31a4d9" name="ActivityFinal11" isLeaf="false">
+            <elementDefinition Id="5f0ddd85-268f-45ee-b23f-133318d940a1" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
   <package Id="80461270-a707-4aad-a949-cdc96dbaad2b" name="Proyecto">
     <elementDefinition Id="6b93e885-3e82-4e76-97aa-57cbc7854abd" />
     <profileInstances>
