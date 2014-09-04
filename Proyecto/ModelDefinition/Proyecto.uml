@@ -1006,7 +1006,7 @@ sistema xyz.
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="4d7ee49f-0af7-45a4-a846-c13c8dbc768b"
-                  LastKnownName="Action2"
+                  LastKnownName="Seleccione el tipo de indentidad y ingresar el numero de la indentidad del visistante no anunciado"
                   LastKnownLocation="Proyecto.uml" />
               </controlFlow>
             </flowNodeTargets>
@@ -1028,8 +1028,19 @@ sistema xyz.
           </opaqueAction>
           <opaqueAction
             Id="4d7ee49f-0af7-45a4-a846-c13c8dbc768b"
-            name="Action2"
-            isLeaf="false" />
+            name="Seleccione el tipo de indentidad y ingresar el numero de la indentidad del visistante no anunciado"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a89ce9e8-0097-44b3-8a21-c7ec89069bee"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="2625ed04-1ec2-4543-a8eb-893fb804afb2"
+                  LastKnownName="Merge2"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
           <activityParameterNode
             Id="e7c4c979-071c-4833-9d48-88eacf76200e"
             name="Visittante no anunciado"
@@ -1160,6 +1171,21 @@ sistema xyz.
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
+          <mergeNode
+            Id="2625ed04-1ec2-4543-a8eb-893fb804afb2"
+            name="Merge2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7b5c1f18-0c3d-4ccb-b7a5-1af951715bf4"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="27e31ce5-0b6a-470a-9e62-608547a22b2f"
+                  LastKnownName="Seleccionara el departamento de unitec que el visitante se dirige"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
         </nodes>
       </activity>
     </packageHasNamedElement>

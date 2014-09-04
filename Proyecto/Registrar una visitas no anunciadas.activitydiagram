@@ -62,7 +62,7 @@ sistema xyz.
                 <elementDefinition Id="9831934d-3e86-4764-a04e-40dec312d4f7" />
               </controlFlow>
               <controlFlow Id="bc5307cd-7f1b-46aa-b626-3050d8b5854f" guard="El visitante no esta en la base de datos" isLeaf="false">
-                <opaqueActionMoniker Id="8b4fb307-bd49-4943-ad36-3f0556c62bc4" LastKnownName="Action2" />
+                <opaqueActionMoniker Id="8b4fb307-bd49-4943-ad36-3f0556c62bc4" LastKnownName="Seleccione el tipo de indentidad y ingresar el numero de la indentidad del visistante no anunciado" />
                 <elementDefinition Id="166a4ae8-3de6-4cb0-9494-4ae25f80f04e" />
               </controlFlow>
             </flowNodeTargets>
@@ -76,8 +76,14 @@ sistema xyz.
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <opaqueAction Id="8b4fb307-bd49-4943-ad36-3f0556c62bc4" name="Action2" isLeaf="false">
+          <opaqueAction Id="8b4fb307-bd49-4943-ad36-3f0556c62bc4" name="Seleccione el tipo de indentidad y ingresar el numero de la indentidad del visistante no anunciado" isLeaf="false">
             <elementDefinition Id="4d7ee49f-0af7-45a4-a846-c13c8dbc768b" />
+            <flowNodeTargets>
+              <controlFlow Id="9aa52706-5971-41c5-ac6e-19973c32066f" isLeaf="false">
+                <mergeNodeMoniker Id="09901dcf-47e0-4404-b28e-b34feb13ebc0" LastKnownName="Merge2" />
+                <elementDefinition Id="a89ce9e8-0097-44b3-8a21-c7ec89069bee" />
+              </controlFlow>
+            </flowNodeTargets>
           </opaqueAction>
           <activityParameterNode Id="2038fb51-3273-44b1-bcd4-0c330b46a996" name="Visittante no anunciado" isLeaf="false" ordering="Unordered" isControlType="false">
             <elementDefinition Id="e7c4c979-071c-4833-9d48-88eacf76200e" />
@@ -156,6 +162,15 @@ sistema xyz.
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
+          <mergeNode Id="09901dcf-47e0-4404-b28e-b34feb13ebc0" name="Merge2" isLeaf="false">
+            <elementDefinition Id="2625ed04-1ec2-4543-a8eb-893fb804afb2" />
+            <flowNodeTargets>
+              <controlFlow Id="4893fd0f-0af5-4e6e-9790-514504c4e282" isLeaf="false">
+                <opaqueActionMoniker Id="aaf2f510-5d95-4be8-b32b-a6ff81a63774" LastKnownName="Seleccionara el departamento de unitec que el visitante se dirige" />
+                <elementDefinition Id="7b5c1f18-0c3d-4ccb-b7a5-1af951715bf4" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
         </nodes>
       </activity>
     </activityRootModelHasActivity>
