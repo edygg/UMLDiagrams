@@ -36,12 +36,13 @@
       <SubType>Content</SubType>
       <DependentUpon>Proceso General.activitydiagram</DependentUpon>
     </Content>
-    <Content Include="Registrar una visita.activitydiagram">
+
+    <Content Include="Registrar una visita anunciada.activitydiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Registrar una visita.activitydiagram.layout">
+    <Content Include="Registrar una visita anunciada.activitydiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>Registrar una visita.activitydiagram</DependentUpon>
+      <DependentUpon>Registrar una visita anunciada.activitydiagram</DependentUpon>
     </Content>
     <Validate Include="Verificar su nombre dentro.activitydiagram">
       <SubType>Content</SubType>

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="c318b514-74f8-4429-b97c-39e49de4a429" name="Salida de visitas no anunciadas" linkedPackageId="41b061a4-5b4d-4ff9-8ae1-3b184568be07" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <ownedCommentsInternal>
-    <comment Id="f523dba5-cc05-4058-9ecd-71d125e337de">
-      <elementDefinition Id="ebc527aa-1ad2-4445-8914-e0850322b99d" />
+    <comment Id="df02904b-f811-44f4-9b75-a0514f886bfe">
+      <elementDefinition Id="17b2553b-9a60-4276-a283-7c4a2b7d3f91" />
       <body>Prerequisitos
 
 1 El guardia de entrada peatonal
@@ -16,20 +16,6 @@ sistema xyz.
       </annotatedElements>
     </comment>
   </ownedCommentsInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="82907aa6-ebbb-4eab-9a1a-ae644d499dd9">
-      <profileInstance Id="ce04c3cc-b4c7-4c27-b45e-2439bcab3fa7" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="66588f1c-6eef-4449-87cf-84e8e574d7db">
-      <profileInstance Id="2f3b9166-1c5d-4644-a88b-ed7d50ad0035" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="d05cd066-c2b7-46aa-a989-2605593564cd" name="Salida de visitas no anunciadas" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
@@ -127,5 +113,19 @@ sistema xyz.
   </packagedElements>
   <package Id="41b061a4-5b4d-4ff9-8ae1-3b184568be07" name="Proyecto">
     <elementDefinition Id="6b93e885-3e82-4e76-97aa-57cbc7854abd" />
+    <profileInstances>
+      <packageHasProfileInstances Id="82907aa6-ebbb-4eab-9a1a-ae644d499dd9">
+        <profileInstance Id="ce04c3cc-b4c7-4c27-b45e-2439bcab3fa7" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="66588f1c-6eef-4449-87cf-84e8e574d7db">
+        <profileInstance Id="2f3b9166-1c5d-4644-a88b-ed7d50ad0035" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </activityRootModel>
