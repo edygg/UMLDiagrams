@@ -25,12 +25,6 @@ sistema xyz.
         <opaqueActionMoniker Id="9f197137-1fc2-4789-9511-9df063a7d4b5" LastKnownName="Buscar el nombre del visitante en la lista de visitas del día de hoy" />
       </annotatedElements>
     </comment>
-    <comment Id="9fa28362-2bd3-4c1b-93c9-246c688a4841">
-      <elementDefinition Id="98fcd9e5-8444-4780-802c-f2e1b5762fc9" />
-      <body>Verificar su nombre dentro
-de las lista de visitantes
-anunciados</body>
-    </comment>
   </ownedCommentsInternal>
   <packagedElements>
     <activityRootModelHasActivity>
@@ -93,16 +87,16 @@ anunciados</body>
             <elementDefinition Id="bb829775-111b-46bb-84ed-5754949a4c99" />
             <flowNodeTargets>
               <controlFlow Id="bcb9714a-7272-4f86-98d1-298df41e5d4d" guard=" Nombre encontrado" isLeaf="false">
-                <opaqueActionMoniker Id="fea75766-5aec-412d-a525-075cdac489c4" LastKnownName="Se autoriza&#xD;&#xA;Ingreso o &#xD;&#xA;salida" />
+                <opaqueActionMoniker Id="fea75766-5aec-412d-a525-075cdac489c4" LastKnownName="Autorizar el Ingreso o salida" />
                 <elementDefinition Id="5864e9a3-67d7-43b2-9129-10bf0610c2d8" />
               </controlFlow>
               <controlFlow Id="01956943-cedc-4d9b-8fc0-578ae532d1a9" guard="Nombre no encontrado" isLeaf="false">
-                <opaqueActionMoniker Id="8acf01e1-f220-4498-ba8c-055af239ecfe" LastKnownName="Se niega la&#xD;&#xA;entrada al campus" />
+                <opaqueActionMoniker Id="8acf01e1-f220-4498-ba8c-055af239ecfe" LastKnownName="Negar la entrada al campus" />
                 <elementDefinition Id="07731aac-e971-4c7d-9154-257e6b934e33" />
               </controlFlow>
             </flowNodeTargets>
           </decisionNode>
-          <opaqueAction Id="fea75766-5aec-412d-a525-075cdac489c4" name="Se autoriza&#xD;&#xA;Ingreso o &#xD;&#xA;salida" isLeaf="false">
+          <opaqueAction Id="fea75766-5aec-412d-a525-075cdac489c4" name="Autorizar el Ingreso o salida" isLeaf="false">
             <elementDefinition Id="b6c3d053-df81-49b1-a296-b847eea82b7d" />
             <flowNodeTargets>
               <controlFlow Id="20612fd8-c2e1-441c-a320-6af8e17fe16e" isLeaf="false">
@@ -111,7 +105,7 @@ anunciados</body>
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <opaqueAction Id="8acf01e1-f220-4498-ba8c-055af239ecfe" name="Se niega la&#xD;&#xA;entrada al campus" isLeaf="false">
+          <opaqueAction Id="8acf01e1-f220-4498-ba8c-055af239ecfe" name="Negar la entrada al campus" isLeaf="false">
             <elementDefinition Id="fc84d7b5-9b71-48f2-9590-8eddc2d193f2" />
             <flowNodeTargets>
               <controlFlow Id="29fc0cbf-6257-4f24-bc7e-62ce7957e49c" isLeaf="false">

@@ -12,7 +12,9 @@
     <comment Id="88d47d2f-025f-4e3e-82c3-fc74b3d7be25">
       <elementDefinition Id="40d91335-a488-4b9b-9661-2ae32904c7f2" />
       <body>Precondiciones:
-1. El funcionario administrativo a iniciado session en el portal y existe un ícono en el portal de UNITEC para acceder al sistema XYZ
+
+1. El funcionario administrativo a iniciado sesion en el portal y existe un ícono en el portal de UNITEC para acceder al sistema XYZ
+
 2. El usuario tiene cargada la pantalla inicial de la facilidad registro de visitas (FormaRVA1)</body>
       <annotatedElements>
         <initialNodeMoniker Id="f974b779-f915-4f12-95f8-102b419fc319" LastKnownName="Initial1" />

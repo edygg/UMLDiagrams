@@ -51,12 +51,6 @@ sistema xyz.
       </annotatedElements>
     </comment>
     <comment
-      Id="98fcd9e5-8444-4780-802c-f2e1b5762fc9">
-      <body>Verificar su nombre dentro
-de las lista de visitantes
-anunciados</body>
-    </comment>
-    <comment
       Id="edfcf1ac-2de1-47f0-9dbd-9274787cb27c">
       <body>Revisar FormaRVA3</body>
       <annotatedElements>
@@ -112,7 +106,9 @@ registro de visitas no anunciadas.
     <comment
       Id="40d91335-a488-4b9b-9661-2ae32904c7f2">
       <body>Precondiciones:
-1. El funcionario administrativo a iniciado session en el portal y existe un ícono en el portal de UNITEC para acceder al sistema XYZ
+
+1. El funcionario administrativo a iniciado sesion en el portal y existe un ícono en el portal de UNITEC para acceder al sistema XYZ
+
 2. El usuario tiene cargada la pantalla inicial de la facilidad registro de visitas (FormaRVA1)</body>
       <annotatedElements>
         <initialNodeMoniker
@@ -163,6 +159,22 @@ sistema xyz.
         <opaqueActionMoniker
           Id="a3b57e21-988c-48c6-b4db-e0b16aab4e87"
           LastKnownName="Seleccionar el visitante no anunciado de la lista de personas que entraron al campus"
+          LastKnownLocation="Proyecto.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="3a1d3699-b73c-4466-960a-5b1fff745995">
+      <body>Precondiciones:
+
+1. El guardia de entrada peatonal ha iniciado sesión en el sistema XYZ.
+
+2. El guardia de la entrada peatonal está en la facilidad de registro de visitas no anunciadas (FormaRVNA1).
+
+3. El estudiante está en la posta</body>
+      <annotatedElements>
+        <initialNodeMoniker
+          Id="2f9d4c92-60f9-4596-8625-605d3cc49e14"
+          LastKnownName="Initial1"
           LastKnownLocation="Proyecto.uml" />
       </annotatedElements>
     </comment>
@@ -701,7 +713,7 @@ sistema xyz.
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="b6c3d053-df81-49b1-a296-b847eea82b7d"
-                  LastKnownName="Se autoriza&#xD;&#xA;Ingreso o &#xD;&#xA;salida"
+                  LastKnownName="Autorizar el Ingreso o salida"
                   LastKnownLocation="Proyecto.uml" />
               </controlFlow>
               <controlFlow
@@ -710,14 +722,14 @@ sistema xyz.
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="fc84d7b5-9b71-48f2-9590-8eddc2d193f2"
-                  LastKnownName="Se niega la&#xD;&#xA;entrada al campus"
+                  LastKnownName="Negar la entrada al campus"
                   LastKnownLocation="Proyecto.uml" />
               </controlFlow>
             </flowNodeTargets>
           </decisionNode>
           <opaqueAction
             Id="b6c3d053-df81-49b1-a296-b847eea82b7d"
-            name="Se autoriza&#xD;&#xA;Ingreso o &#xD;&#xA;salida"
+            name="Autorizar el Ingreso o salida"
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
@@ -732,7 +744,7 @@ sistema xyz.
           </opaqueAction>
           <opaqueAction
             Id="fc84d7b5-9b71-48f2-9590-8eddc2d193f2"
-            name="Se niega la&#xD;&#xA;entrada al campus"
+            name="Negar la entrada al campus"
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
@@ -1389,6 +1401,197 @@ sistema xyz.
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="752fe9d1-19f4-4a29-bff7-cd72aee00f5e"
+        name="Busca el alumno por numero de cuenta"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="2f9d4c92-60f9-4596-8625-605d3cc49e14"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="70d8da35-57f6-4c03-805e-d9e5c67ba3b0"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="2b6e6cd0-97c1-4833-9333-d661ab1528ff"
+                  LastKnownName="Introducir el número de cuenta del estudiante"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityParameterNode
+            Id="46bc6aa2-3a44-4192-8c85-eed534213516"
+            name="Estudiante"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="a30a20e2-92ef-44b2-8200-9d679b8842f1"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </activityParameterNode>
+          <activityParameterNode
+            Id="3caae0dc-2562-4aef-ad2e-2eb743d29443"
+            name="Guardia de entrada peatonal"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="6914a0a3-1766-4ff2-a914-5254500dafec"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </activityParameterNode>
+          <opaqueAction
+            Id="2b6e6cd0-97c1-4833-9333-d661ab1528ff"
+            name="Introducir el número de cuenta del estudiante"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="cf433b50-555f-4839-a77c-432ece463f28"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="7ac74bef-c44b-4493-b20f-a087069968d8"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="7ac74bef-c44b-4493-b20f-a087069968d8"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d3c2e73a-0a31-4dcc-afc9-2bc2e61a5e53"
+                guard="el numero de cuenta coincide"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="4313cf9e-1761-48a2-823e-03aa371c4197"
+                  LastKnownName="Mostrar los datos del estudiante"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="952664a7-da59-4e8d-b592-a34feacdd5c4"
+                guard="El numero de cuenta no coincide"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="dc0ff883-94ec-46e9-a99b-436756ebcbca"
+                  LastKnownName="Mostrar una alerta de no coincidencia de numero de cuenta"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="4313cf9e-1761-48a2-823e-03aa371c4197"
+            name="Mostrar los datos del estudiante"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="96ccbe91-81c3-4f4e-8729-19ed9697d9da"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="6146c260-2a0b-4111-9e8f-96a672ec9d8a"
+                  LastKnownName="Autorizar la entrada el estudiante"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="dc0ff883-94ec-46e9-a99b-436756ebcbca"
+            name="Mostrar una alerta de no coincidencia de numero de cuenta"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1f5c04cb-270a-4627-b40e-de1807a15216"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f7af551a-3d1e-4704-b1b3-0ae7f604c8eb"
+                  LastKnownName="Negar entrada"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityParameterNode
+            Id="a5c05cf5-207e-46ea-9956-ee6cc3a2caee"
+            name="Sistema XYZ"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="47bc1044-7ee4-4cf0-8030-a4b2cf9cb43b"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </activityParameterNode>
+          <opaqueAction
+            Id="f7af551a-3d1e-4704-b1b3-0ae7f604c8eb"
+            name="Negar entrada"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="66819fa8-5a94-4a83-acda-279e66880dcf"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="5f0ddd85-268f-45ee-b23f-133318d940a1"
+                  LastKnownName="ActivityFinal11"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="e2911608-4f09-44e7-9ce8-876ba93fa7ad"
+            name="Entrar al campus"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b8427b8a-f01d-423d-ab4e-8a5e44811f80"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="19f60db7-a5d1-4ddd-ac6d-630d09f6bdfd"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="6146c260-2a0b-4111-9e8f-96a672ec9d8a"
+            name="Autorizar la entrada el estudiante"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9ca48a9c-6ffd-4f69-b8b0-93be1a7d4ca8"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e2911608-4f09-44e7-9ce8-876ba93fa7ad"
+                  LastKnownName="Entrar al campus"
+                  LastKnownLocation="Proyecto.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="19f60db7-a5d1-4ddd-ac6d-630d09f6bdfd"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <activityFinalNode
+            Id="5f0ddd85-268f-45ee-b23f-133318d940a1"
+            name="ActivityFinal11"
+            isLeaf="false" />
         </nodes>
       </activity>
     </packageHasNamedElement>
