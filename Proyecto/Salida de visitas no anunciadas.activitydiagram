@@ -1,18 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="c318b514-74f8-4429-b97c-39e49de4a429" name="Salida de visitas no anunciadas" linkedPackageId="41b061a4-5b4d-4ff9-8ae1-3b184568be07" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="c318b514-74f8-4429-b97c-39e49de4a429" name="Salida de visitas no anunciadas" linkedPackageId="41b061a4-5b4d-4ff9-8ae1-3b184568be07" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <ownedCommentsInternal>
     <comment Id="df02904b-f811-44f4-9b75-a0514f886bfe">
       <elementDefinition Id="17b2553b-9a60-4276-a283-7c4a2b7d3f91" />
-      <body>Prerequisitos
-
-1 El guardia de entrada peatonal
- ha iniciado sesion en el
+      <body>Precondiciones:
+1. El guardia de la entrada peatonal
+ ha iniciado sesión en el
 sistema xyz.
-2. El guardia de entrada peatonal esta en la facilidad de
- de registro de visitas no anunciadas.
-5. El visitante esta en la posta</body>
+
+2. El guardia de la entrada peatonal está en la facilidad de registro de visitas no anunciadas.
+
+3. El visitante esta en la posta.</body>
       <annotatedElements>
         <initialNodeMoniker Id="a911317c-ca1d-43c6-b0b1-6b39fc7cd00d" LastKnownName="Initial1" />
+      </annotatedElements>
+    </comment>
+    <comment Id="3e17d89a-2c66-44f2-aab2-cc34a5db9ef5">
+      <elementDefinition Id="a1055fd7-87e9-43a8-8369-380c71d9cb96" />
+      <body>Revisar FormaRVNA1</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="8f9d608f-f3e9-493b-9600-2a626fef80a8" LastKnownName="Buscar el visitante no anunciado por número de indentidad o numero de carnet" />
+        <opaqueActionMoniker Id="4767602b-3eb7-4f1d-8bad-2c193cc30aeb" LastKnownName="Marca la salida del visistante no anunciado" />
+        <opaqueActionMoniker Id="10591760-49b2-42aa-9239-6c3b851b6579" LastKnownName="Seleccionar el visitante no anunciado de la lista de personas que entraron al campus" />
       </annotatedElements>
     </comment>
   </ownedCommentsInternal>
@@ -25,12 +34,12 @@ sistema xyz.
             <elementDefinition Id="6a0dd474-d70d-45a3-a642-2217c9fb4e4b" />
             <flowNodeTargets>
               <controlFlow Id="4df264cf-2ef8-4b0e-9972-0f5106e8b88f" isLeaf="false">
-                <opaqueActionMoniker Id="10591760-49b2-42aa-9239-6c3b851b6579" LastKnownName="Selecciona el visistante no anunciado de la lista de personas que entraron al campus" />
+                <opaqueActionMoniker Id="10591760-49b2-42aa-9239-6c3b851b6579" LastKnownName="Seleccionar el visitante no anunciado de la lista de personas que entraron al campus" />
                 <elementDefinition Id="9c07baaf-cb00-4f13-990c-be1a5ad6ba33" />
               </controlFlow>
             </flowNodeTargets>
           </initialNode>
-          <activityParameterNode Id="8a9cc461-ace9-4654-8d6b-c2c0792221bf" name="Visittante no anunciado" isLeaf="false" ordering="Unordered" isControlType="false">
+          <activityParameterNode Id="8a9cc461-ace9-4654-8d6b-c2c0792221bf" name="Visitante no anunciado" isLeaf="false" ordering="Unordered" isControlType="false">
             <elementDefinition Id="c6268f14-ca2d-4101-b818-178fa3d6d077" />
             <upperBound>
               <literalInteger Id="0ed90e5f-ef9c-4254-b9a6-a9504381df66" name="2147483647" value="2147483647">
@@ -46,7 +55,7 @@ sistema xyz.
               </literalInteger>
             </upperBound>
           </activityParameterNode>
-          <opaqueAction Id="10591760-49b2-42aa-9239-6c3b851b6579" name="Selecciona el visistante no anunciado de la lista de personas que entraron al campus" isLeaf="false">
+          <opaqueAction Id="10591760-49b2-42aa-9239-6c3b851b6579" name="Seleccionar el visitante no anunciado de la lista de personas que entraron al campus" isLeaf="false">
             <elementDefinition Id="a3b57e21-988c-48c6-b4db-e0b16aab4e87" />
             <flowNodeTargets>
               <controlFlow Id="c767a125-c4f3-4f1c-a4fc-b80117d49aaf" isLeaf="false">
@@ -63,7 +72,7 @@ sistema xyz.
                 <elementDefinition Id="467e2f95-93d4-4c86-9974-3eddc10e89ef" />
               </controlFlow>
               <controlFlow Id="f4569a0c-0fbc-42ab-9fec-8a74ef3e1971" guard="No lo encuentra en la lista" isLeaf="false">
-                <opaqueActionMoniker Id="8f9d608f-f3e9-493b-9600-2a626fef80a8" LastKnownName="Buscar el visistante no anunciado por numero de indentidad o numero de carnet" />
+                <opaqueActionMoniker Id="8f9d608f-f3e9-493b-9600-2a626fef80a8" LastKnownName="Buscar el visitante no anunciado por número de indentidad o numero de carnet" />
                 <elementDefinition Id="d1c42a0e-02b3-4214-b7b8-b92257a1fb82" />
               </controlFlow>
             </flowNodeTargets>
@@ -77,7 +86,7 @@ sistema xyz.
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <opaqueAction Id="8f9d608f-f3e9-493b-9600-2a626fef80a8" name="Buscar el visistante no anunciado por numero de indentidad o numero de carnet" isLeaf="false">
+          <opaqueAction Id="8f9d608f-f3e9-493b-9600-2a626fef80a8" name="Buscar el visitante no anunciado por número de indentidad o numero de carnet" isLeaf="false">
             <elementDefinition Id="10790237-2829-46ed-a012-c1d3604f365c" />
             <flowNodeTargets>
               <controlFlow Id="07381936-be7e-4214-88ef-95cec8696649" isLeaf="false">

@@ -1,32 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="ecf7868b-2ce5-4583-94ec-be59b1de1b9d" name="Verificar su nombre dentro" linkedPackageId="e5970e77-8948-4f56-b3fb-c80205ea6ed9" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="ecf7868b-2ce5-4583-94ec-be59b1de1b9d" name="Verificar su nombre dentro" linkedPackageId="e5970e77-8948-4f56-b3fb-c80205ea6ed9" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <ownedCommentsInternal>
     <comment Id="d2d0e6c7-b308-4334-a602-06c65c06c949">
       <elementDefinition Id="a4de452e-a1a2-4eaa-91fe-4866ec90a0cc" />
-      <body>Prerequisitos
-1. El visitante ya ha sido 
-    registrado en el sistema xyz,
-    facilidad registro de visitas
-    anunciadas.
-2. El guardia de entrada peatonal
-vehicular ha iniciado sesion en el
+      <body>Precondiciones
+1. El visitante ya ha sido registrado en el sistema xyz, facilidad registro de visitas anunciadas (FormaRVA1).
+
+2. El guardia de entrada peatonal/
+vehicular ha iniciado sesion en el 
 sistema xyz.
-3. El guardia de entrada peatonal
-vehicular esta en la facilidad de
-ingreso de visitas anunciadas
-4. El visitante esta en la posta</body>
+
+3. El guardia de la entrada peatonal/vehicular esta en la facilidad de ingreso de visitas anunciadas
+ (FormaIVA1)
+
+4. El visitante está en la posta.</body>
       <annotatedElements>
         <initialNodeMoniker Id="8d29a51b-273e-49fa-a7b5-fc73e137f08d" LastKnownName="Initial1" />
       </annotatedElements>
     </comment>
     <comment Id="f71abd16-213d-4b8a-841e-58d1c23f75be">
       <elementDefinition Id="f2264b4d-eef7-4ccc-ac06-53ca1bf99caf" />
-      <body>Favor ver boceto de 
-codigo del boceto  de 
-visitas anunciadas con sus
-criterios de aceptacion</body>
+      <body>Revisar FormaIVA1</body>
       <annotatedElements>
-        <opaqueActionMoniker Id="9f197137-1fc2-4789-9511-9df063a7d4b5" LastKnownName="Se busca el nombre&#xD;&#xA;en la lista de visitas&#xD;&#xA;del día de hoy" />
+        <opaqueActionMoniker Id="9f197137-1fc2-4789-9511-9df063a7d4b5" LastKnownName="Buscar el nombre del visitante en la lista de visitas del día de hoy" />
       </annotatedElements>
     </comment>
     <comment Id="9fa28362-2bd3-4c1b-93c9-246c688a4841">
@@ -61,30 +57,30 @@ anunciados</body>
             <elementDefinition Id="2f4b7051-ef03-4b2c-9b74-54eedb717b2c" />
             <flowNodeTargets>
               <controlFlow Id="c2d4e76a-81bd-4c0a-a2ff-629c7c1b8334" isLeaf="false">
-                <opaqueActionMoniker Id="b44e4ff0-0215-4a1e-ad1b-392e3569bc42" LastKnownName="El sistema detecta en&#xD;&#xA;que posta (entrada/salida) esta el usuario&#xD;&#xA;que acaba de iniciar sesion" />
+                <opaqueActionMoniker Id="b44e4ff0-0215-4a1e-ad1b-392e3569bc42" LastKnownName="El sistema detecta en que posta (entrada/salida) esta el usuario&#xD;&#xA;que acaba de iniciar sesion" />
                 <elementDefinition Id="91b8ef65-457f-4c6b-8883-696173db13d0" />
               </controlFlow>
             </flowNodeTargets>
           </initialNode>
-          <opaqueAction Id="b44e4ff0-0215-4a1e-ad1b-392e3569bc42" name="El sistema detecta en&#xD;&#xA;que posta (entrada/salida) esta el usuario&#xD;&#xA;que acaba de iniciar sesion" isLeaf="false">
+          <opaqueAction Id="b44e4ff0-0215-4a1e-ad1b-392e3569bc42" name="El sistema detecta en que posta (entrada/salida) esta el usuario&#xD;&#xA;que acaba de iniciar sesion" isLeaf="false">
             <elementDefinition Id="e33a2d19-5189-41ea-87e8-e8323fa0bf35" />
             <flowNodeTargets>
               <controlFlow Id="03eb60f8-d2d6-4b50-a6c3-1f9b507c90ad" isLeaf="false">
-                <opaqueActionMoniker Id="705e5e41-a453-4acb-84ad-56c9e2dfc6bf" LastKnownName="Brinda su nombre" />
+                <opaqueActionMoniker Id="705e5e41-a453-4acb-84ad-56c9e2dfc6bf" LastKnownName="Brindar su nombre" />
                 <elementDefinition Id="af42bfc4-f253-4b50-9f51-13ad65be420d" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <opaqueAction Id="705e5e41-a453-4acb-84ad-56c9e2dfc6bf" name="Brinda su nombre" isLeaf="false">
+          <opaqueAction Id="705e5e41-a453-4acb-84ad-56c9e2dfc6bf" name="Brindar su nombre" isLeaf="false">
             <elementDefinition Id="1c8ad80d-b741-4601-8c33-c1b28f5a5344" />
             <flowNodeTargets>
               <controlFlow Id="9d74ee28-cb47-422b-9bf5-2da894f6e0b9" isLeaf="false">
-                <opaqueActionMoniker Id="9f197137-1fc2-4789-9511-9df063a7d4b5" LastKnownName="Se busca el nombre&#xD;&#xA;en la lista de visitas&#xD;&#xA;del día de hoy" />
+                <opaqueActionMoniker Id="9f197137-1fc2-4789-9511-9df063a7d4b5" LastKnownName="Buscar el nombre del visitante en la lista de visitas del día de hoy" />
                 <elementDefinition Id="cb855a2e-9041-484b-b86c-03bf001fe920" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <opaqueAction Id="9f197137-1fc2-4789-9511-9df063a7d4b5" name="Se busca el nombre&#xD;&#xA;en la lista de visitas&#xD;&#xA;del día de hoy" isLeaf="false">
+          <opaqueAction Id="9f197137-1fc2-4789-9511-9df063a7d4b5" name="Buscar el nombre del visitante en la lista de visitas del día de hoy" isLeaf="false">
             <elementDefinition Id="047cb689-85bb-43cb-9588-bf37b23fff00" />
             <flowNodeTargets>
               <controlFlow Id="13b78256-6052-4d41-bb1f-76fe25f1aede" isLeaf="false">
@@ -96,7 +92,7 @@ anunciados</body>
           <decisionNode Id="23f0861e-0edd-44e3-bdef-02da1c0953e2" name="Decision1" isLeaf="false">
             <elementDefinition Id="bb829775-111b-46bb-84ed-5754949a4c99" />
             <flowNodeTargets>
-              <controlFlow Id="bcb9714a-7272-4f86-98d1-298df41e5d4d" guard=" Nombre no encontrado" isLeaf="false">
+              <controlFlow Id="bcb9714a-7272-4f86-98d1-298df41e5d4d" guard=" Nombre encontrado" isLeaf="false">
                 <opaqueActionMoniker Id="fea75766-5aec-412d-a525-075cdac489c4" LastKnownName="Se autoriza&#xD;&#xA;Ingreso o &#xD;&#xA;salida" />
                 <elementDefinition Id="5864e9a3-67d7-43b2-9129-10bf0610c2d8" />
               </controlFlow>

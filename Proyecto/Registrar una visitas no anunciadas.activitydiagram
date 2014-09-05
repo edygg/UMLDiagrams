@@ -1,33 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="160b847d-7537-4caa-8f6f-9cead6a114a8" name="Registro de visitas no anunciadas" linkedPackageId="6c778d6b-f698-4a3b-b4e7-741fad2226fe" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="160b847d-7537-4caa-8f6f-9cead6a114a8" name="Registro de visitas no anunciadas" linkedPackageId="6c778d6b-f698-4a3b-b4e7-741fad2226fe" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <ownedCommentsInternal>
     <comment Id="e7ba43c8-ba60-4b55-b137-93f2c7001ca0">
       <elementDefinition Id="77a98718-a3d5-4cbb-a85b-7d18e2e2d48c" />
-      <body>Prerequisitos
+      <body>Precondiciones:
 
-1 El guardia de entrada peatonal
+1. El guardia de la entrada peatonal
  ha iniciado sesion en el
 sistema xyz.
+
 2. El guardia de entrada peatonal esta en la facilidad de
- de registro de visitas no anunciadas.
-5. El visitante esta en la posta</body>
+registro de visitas no anunciadas.
+
+3.El visitante esta en la posta</body>
       <annotatedElements>
         <initialNodeMoniker Id="a76c2847-157e-45b2-8fe6-5c42ac1b82ee" LastKnownName="Initial1" />
       </annotatedElements>
     </comment>
     <comment Id="d4f984df-0993-4eb5-8d02-ba7f0685a5a8">
       <elementDefinition Id="9fb898e9-48d1-4fae-a29a-f80b2e0a4416" />
-      <body>previo a este la base de datos contiene indentidades de las pasadas elecciones nacionales
-</body>
+      <body>Existe una base de datos que contiene los números de identidad de las personas capaces de votar en las pasadas elecciones nacionales (2013).</body>
       <annotatedElements>
         <decisionNodeMoniker Id="7387cd2c-d6b8-46b9-ad28-13c2e23d7452" LastKnownName="Decision1" />
       </annotatedElements>
     </comment>
     <comment Id="446fc73e-c8a7-483f-8d34-ef859859522c">
       <elementDefinition Id="4ef76d0d-088c-4556-b31f-9530b6e20d8c" />
-      <body>este numero de carnet esta asignado solo para este visistante mientras su estadia</body>
+      <body>Este número de carnet esta asignado solo para este visitante en su estadia en el campus.</body>
       <annotatedElements>
-        <opaqueActionMoniker Id="49a01197-9436-458b-a562-ae50679e1c19" LastKnownName="Seleccionara el numero del carnet que se le asignara al visitante" />
+        <opaqueActionMoniker Id="49a01197-9436-458b-a562-ae50679e1c19" LastKnownName="Seleccionar el número de carnet que se le asignará al visitante" />
+      </annotatedElements>
+    </comment>
+    <comment Id="5efa6efe-e21e-42b8-9235-a59deb3662e4">
+      <elementDefinition Id="688b6501-ad3c-44cd-9283-2ef1699aeaac" />
+      <body>Revisar FormaRVNA1</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="8b4fb307-bd49-4943-ad36-3f0556c62bc4" LastKnownName="Seleccionar el tipo de identificación e ingresar el numero de la identificación" />
       </annotatedElements>
     </comment>
   </ownedCommentsInternal>
@@ -40,12 +48,12 @@ sistema xyz.
             <elementDefinition Id="5425cb94-f2a8-4444-8433-3e680b79287d" />
             <flowNodeTargets>
               <controlFlow Id="5e24dd12-2e08-4a98-8e3d-38d2f3c5a480" isLeaf="false">
-                <opaqueActionMoniker Id="8827c55a-19d5-4b5e-bde2-7d0d5cec7572" LastKnownName="Ingresa la identidad de la visita no anunciada" />
+                <opaqueActionMoniker Id="8827c55a-19d5-4b5e-bde2-7d0d5cec7572" LastKnownName="Ingresar la identidad de la visita no anunciada" />
                 <elementDefinition Id="b9ce1e18-0287-497a-88cc-b4bcc04c093e" />
               </controlFlow>
             </flowNodeTargets>
           </initialNode>
-          <opaqueAction Id="8827c55a-19d5-4b5e-bde2-7d0d5cec7572" name="Ingresa la identidad de la visita no anunciada" isLeaf="false">
+          <opaqueAction Id="8827c55a-19d5-4b5e-bde2-7d0d5cec7572" name="Ingresar la identidad de la visita no anunciada" isLeaf="false">
             <elementDefinition Id="07dbcbc7-8723-4af9-b5cc-c6096fc6737c" />
             <flowNodeTargets>
               <controlFlow Id="4c4fcf51-1cd3-4074-908d-278d724dfab0" isLeaf="false">
@@ -58,25 +66,25 @@ sistema xyz.
             <elementDefinition Id="1b07b0a6-e13c-4305-b4c9-c25b6fd302dd" />
             <flowNodeTargets>
               <controlFlow Id="07613b19-db04-4dcf-8db3-37fe9fbdb0d3" guard="El visitante esta en la base de datos" isLeaf="false">
-                <opaqueActionMoniker Id="aaf2f510-5d95-4be8-b32b-a6ff81a63774" LastKnownName="Seleccionara el departamento de unitec que el visitante se dirige" />
+                <opaqueActionMoniker Id="aaf2f510-5d95-4be8-b32b-a6ff81a63774" LastKnownName="Seleccionar el departamento de UNITEC al que el visitante se dirige" />
                 <elementDefinition Id="9831934d-3e86-4764-a04e-40dec312d4f7" />
               </controlFlow>
               <controlFlow Id="bc5307cd-7f1b-46aa-b626-3050d8b5854f" guard="El visitante no esta en la base de datos" isLeaf="false">
-                <opaqueActionMoniker Id="8b4fb307-bd49-4943-ad36-3f0556c62bc4" LastKnownName="Seleccione el tipo de indentidad y ingresar el numero de la indentidad del visistante no anunciado" />
+                <opaqueActionMoniker Id="8b4fb307-bd49-4943-ad36-3f0556c62bc4" LastKnownName="Seleccionar el tipo de identificación e ingresar el numero de la identificación" />
                 <elementDefinition Id="166a4ae8-3de6-4cb0-9494-4ae25f80f04e" />
               </controlFlow>
             </flowNodeTargets>
           </decisionNode>
-          <opaqueAction Id="aaf2f510-5d95-4be8-b32b-a6ff81a63774" name="Seleccionara el departamento de unitec que el visitante se dirige" isLeaf="false">
+          <opaqueAction Id="aaf2f510-5d95-4be8-b32b-a6ff81a63774" name="Seleccionar el departamento de UNITEC al que el visitante se dirige" isLeaf="false">
             <elementDefinition Id="27e31ce5-0b6a-470a-9e62-608547a22b2f" />
             <flowNodeTargets>
               <controlFlow Id="d8f71f17-d256-46ca-8bef-d2f4226487fe" isLeaf="false">
-                <opaqueActionMoniker Id="49a01197-9436-458b-a562-ae50679e1c19" LastKnownName="Seleccionara el numero del carnet que se le asignara al visitante" />
+                <opaqueActionMoniker Id="49a01197-9436-458b-a562-ae50679e1c19" LastKnownName="Seleccionar el número de carnet que se le asignará al visitante" />
                 <elementDefinition Id="83b3069d-56ff-46be-bdc1-9fb77ab1ec9a" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <opaqueAction Id="8b4fb307-bd49-4943-ad36-3f0556c62bc4" name="Seleccione el tipo de indentidad y ingresar el numero de la indentidad del visistante no anunciado" isLeaf="false">
+          <opaqueAction Id="8b4fb307-bd49-4943-ad36-3f0556c62bc4" name="Seleccionar el tipo de identificación e ingresar el numero de la identificación" isLeaf="false">
             <elementDefinition Id="4d7ee49f-0af7-45a4-a846-c13c8dbc768b" />
             <flowNodeTargets>
               <controlFlow Id="9aa52706-5971-41c5-ac6e-19973c32066f" isLeaf="false">
@@ -85,7 +93,7 @@ sistema xyz.
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <activityParameterNode Id="2038fb51-3273-44b1-bcd4-0c330b46a996" name="Visittante no anunciado" isLeaf="false" ordering="Unordered" isControlType="false">
+          <activityParameterNode Id="2038fb51-3273-44b1-bcd4-0c330b46a996" name="Visitante no anunciado" isLeaf="false" ordering="Unordered" isControlType="false">
             <elementDefinition Id="e7c4c979-071c-4833-9d48-88eacf76200e" />
             <upperBound>
               <literalInteger Id="f337a20e-5a79-4649-8d0d-985cb6d09c58" name="2147483647" value="2147483647">
@@ -101,7 +109,7 @@ sistema xyz.
               </literalInteger>
             </upperBound>
           </activityParameterNode>
-          <opaqueAction Id="49a01197-9436-458b-a562-ae50679e1c19" name="Seleccionara el numero del carnet que se le asignara al visitante" isLeaf="false">
+          <opaqueAction Id="49a01197-9436-458b-a562-ae50679e1c19" name="Seleccionar el número de carnet que se le asignará al visitante" isLeaf="false">
             <elementDefinition Id="9c0bde3b-5588-4db5-a76d-3a05221f5d0f" />
             <flowNodeTargets>
               <controlFlow Id="a481ff10-a81b-4359-8fc9-110f2e8f56e1" isLeaf="false">
@@ -166,7 +174,7 @@ sistema xyz.
             <elementDefinition Id="2625ed04-1ec2-4543-a8eb-893fb804afb2" />
             <flowNodeTargets>
               <controlFlow Id="4893fd0f-0af5-4e6e-9790-514504c4e282" isLeaf="false">
-                <opaqueActionMoniker Id="aaf2f510-5d95-4be8-b32b-a6ff81a63774" LastKnownName="Seleccionara el departamento de unitec que el visitante se dirige" />
+                <opaqueActionMoniker Id="aaf2f510-5d95-4be8-b32b-a6ff81a63774" LastKnownName="Seleccionar el departamento de UNITEC al que el visitante se dirige" />
                 <elementDefinition Id="7b5c1f18-0c3d-4ccb-b7a5-1af951715bf4" />
               </controlFlow>
             </flowNodeTargets>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
   dslVersion="1.0.0.0"
   Id="6b93e885-3e82-4e76-97aa-57cbc7854abd"
   name="Proyecto" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -22,18 +22,17 @@
     </comment>
     <comment
       Id="a4de452e-a1a2-4eaa-91fe-4866ec90a0cc">
-      <body>Prerequisitos
-1. El visitante ya ha sido 
-    registrado en el sistema xyz,
-    facilidad registro de visitas
-    anunciadas.
-2. El guardia de entrada peatonal
-vehicular ha iniciado sesion en el
+      <body>Precondiciones
+1. El visitante ya ha sido registrado en el sistema xyz, facilidad registro de visitas anunciadas (FormaRVA1).
+
+2. El guardia de entrada peatonal/
+vehicular ha iniciado sesion en el 
 sistema xyz.
-3. El guardia de entrada peatonal
-vehicular esta en la facilidad de
-ingreso de visitas anunciadas
-4. El visitante esta en la posta</body>
+
+3. El guardia de la entrada peatonal/vehicular esta en la facilidad de ingreso de visitas anunciadas
+ (FormaIVA1)
+
+4. El visitante está en la posta.</body>
       <annotatedElements>
         <initialNodeMoniker
           Id="2f4b7051-ef03-4b2c-9b74-54eedb717b2c"
@@ -43,14 +42,11 @@ ingreso de visitas anunciadas
     </comment>
     <comment
       Id="f2264b4d-eef7-4ccc-ac06-53ca1bf99caf">
-      <body>Favor ver boceto de 
-codigo del boceto  de 
-visitas anunciadas con sus
-criterios de aceptacion</body>
+      <body>Revisar FormaIVA1</body>
       <annotatedElements>
         <opaqueActionMoniker
           Id="047cb689-85bb-43cb-9588-bf37b23fff00"
-          LastKnownName="Se busca el nombre&#xD;&#xA;en la lista de visitas&#xD;&#xA;del día de hoy"
+          LastKnownName="Buscar el nombre del visitante en la lista de visitas del día de hoy"
           LastKnownLocation="Proyecto.uml" />
       </annotatedElements>
     </comment>
@@ -62,7 +58,7 @@ anunciados</body>
     </comment>
     <comment
       Id="edfcf1ac-2de1-47f0-9dbd-9274787cb27c">
-      <body>Revisar Forma003</body>
+      <body>Revisar FormaRVA3</body>
       <annotatedElements>
         <opaqueActionMoniker
           Id="6c3ff4ba-54b7-4bdc-a049-5e15e1d97d52"
@@ -76,14 +72,16 @@ anunciados</body>
     </comment>
     <comment
       Id="77a98718-a3d5-4cbb-a85b-7d18e2e2d48c">
-      <body>Prerequisitos
+      <body>Precondiciones:
 
-1 El guardia de entrada peatonal
+1. El guardia de la entrada peatonal
  ha iniciado sesion en el
 sistema xyz.
+
 2. El guardia de entrada peatonal esta en la facilidad de
- de registro de visitas no anunciadas.
-5. El visitante esta en la posta</body>
+registro de visitas no anunciadas.
+
+3.El visitante esta en la posta</body>
       <annotatedElements>
         <initialNodeMoniker
           Id="5425cb94-f2a8-4444-8433-3e680b79287d"
@@ -93,8 +91,7 @@ sistema xyz.
     </comment>
     <comment
       Id="9fb898e9-48d1-4fae-a29a-f80b2e0a4416">
-      <body>previo a este la base de datos contiene indentidades de las pasadas elecciones nacionales
-</body>
+      <body>Existe una base de datos que contiene los números de identidad de las personas capaces de votar en las pasadas elecciones nacionales (2013).</body>
       <annotatedElements>
         <decisionNodeMoniker
           Id="1b07b0a6-e13c-4305-b4c9-c25b6fd302dd"
@@ -104,11 +101,11 @@ sistema xyz.
     </comment>
     <comment
       Id="4ef76d0d-088c-4556-b31f-9530b6e20d8c">
-      <body>este numero de carnet esta asignado solo para este visistante mientras su estadia</body>
+      <body>Este número de carnet esta asignado solo para este visitante en su estadia en el campus.</body>
       <annotatedElements>
         <opaqueActionMoniker
           Id="9c0bde3b-5588-4db5-a76d-3a05221f5d0f"
-          LastKnownName="Seleccionara el numero del carnet que se le asignara al visitante"
+          LastKnownName="Seleccionar el número de carnet que se le asignará al visitante"
           LastKnownLocation="Proyecto.uml" />
       </annotatedElements>
     </comment>
@@ -116,7 +113,7 @@ sistema xyz.
       Id="40d91335-a488-4b9b-9661-2ae32904c7f2">
       <body>Precondiciones:
 1. El funcionario administrativo a iniciado session en el portal y existe un ícono en el portal de UNITEC para acceder al sistema XYZ
-2. El usuario tiene cargada la pantalla inicial de la facilidad registro de visitas (Forma001)</body>
+2. El usuario tiene cargada la pantalla inicial de la facilidad registro de visitas (FormaRVA1)</body>
       <annotatedElements>
         <initialNodeMoniker
           Id="30f6bd7d-54e8-46e9-87fb-d85b55136b8d"
@@ -126,18 +123,46 @@ sistema xyz.
     </comment>
     <comment
       Id="17b2553b-9a60-4276-a283-7c4a2b7d3f91">
-      <body>Prerequisitos
-
-1 El guardia de entrada peatonal
- ha iniciado sesion en el
+      <body>Precondiciones:
+1. El guardia de la entrada peatonal
+ ha iniciado sesión en el
 sistema xyz.
-2. El guardia de entrada peatonal esta en la facilidad de
- de registro de visitas no anunciadas.
-5. El visitante esta en la posta</body>
+
+2. El guardia de la entrada peatonal está en la facilidad de registro de visitas no anunciadas.
+
+3. El visitante esta en la posta.</body>
       <annotatedElements>
         <initialNodeMoniker
           Id="6a0dd474-d70d-45a3-a642-2217c9fb4e4b"
           LastKnownName="Initial1"
+          LastKnownLocation="Proyecto.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="688b6501-ad3c-44cd-9283-2ef1699aeaac">
+      <body>Revisar FormaRVNA1</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="4d7ee49f-0af7-45a4-a846-c13c8dbc768b"
+          LastKnownName="Seleccionar el tipo de identificación e ingresar el numero de la identificación"
+          LastKnownLocation="Proyecto.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="a1055fd7-87e9-43a8-8369-380c71d9cb96">
+      <body>Revisar FormaRVNA1</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="10790237-2829-46ed-a012-c1d3604f365c"
+          LastKnownName="Buscar el visitante no anunciado por número de indentidad o numero de carnet"
+          LastKnownLocation="Proyecto.uml" />
+        <opaqueActionMoniker
+          Id="fd58b480-4631-498d-b3e4-1c07d17ecc59"
+          LastKnownName="Marca la salida del visistante no anunciado"
+          LastKnownLocation="Proyecto.uml" />
+        <opaqueActionMoniker
+          Id="a3b57e21-988c-48c6-b4db-e0b16aab4e87"
+          LastKnownName="Seleccionar el visitante no anunciado de la lista de personas que entraron al campus"
           LastKnownLocation="Proyecto.uml" />
       </annotatedElements>
     </comment>
@@ -615,14 +640,14 @@ sistema xyz.
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="e33a2d19-5189-41ea-87e8-e8323fa0bf35"
-                  LastKnownName="El sistema detecta en&#xD;&#xA;que posta (entrada/salida) esta el usuario&#xD;&#xA;que acaba de iniciar sesion"
+                  LastKnownName="El sistema detecta en que posta (entrada/salida) esta el usuario&#xD;&#xA;que acaba de iniciar sesion"
                   LastKnownLocation="Proyecto.uml" />
               </controlFlow>
             </flowNodeTargets>
           </initialNode>
           <opaqueAction
             Id="e33a2d19-5189-41ea-87e8-e8323fa0bf35"
-            name="El sistema detecta en&#xD;&#xA;que posta (entrada/salida) esta el usuario&#xD;&#xA;que acaba de iniciar sesion"
+            name="El sistema detecta en que posta (entrada/salida) esta el usuario&#xD;&#xA;que acaba de iniciar sesion"
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
@@ -630,14 +655,14 @@ sistema xyz.
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="1c8ad80d-b741-4601-8c33-c1b28f5a5344"
-                  LastKnownName="Brinda su nombre"
+                  LastKnownName="Brindar su nombre"
                   LastKnownLocation="Proyecto.uml" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
           <opaqueAction
             Id="1c8ad80d-b741-4601-8c33-c1b28f5a5344"
-            name="Brinda su nombre"
+            name="Brindar su nombre"
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
@@ -645,14 +670,14 @@ sistema xyz.
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="047cb689-85bb-43cb-9588-bf37b23fff00"
-                  LastKnownName="Se busca el nombre&#xD;&#xA;en la lista de visitas&#xD;&#xA;del día de hoy"
+                  LastKnownName="Buscar el nombre del visitante en la lista de visitas del día de hoy"
                   LastKnownLocation="Proyecto.uml" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
           <opaqueAction
             Id="047cb689-85bb-43cb-9588-bf37b23fff00"
-            name="Se busca el nombre&#xD;&#xA;en la lista de visitas&#xD;&#xA;del día de hoy"
+            name="Buscar el nombre del visitante en la lista de visitas del día de hoy"
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
@@ -672,7 +697,7 @@ sistema xyz.
             <flowNodeTargets>
               <controlFlow
                 Id="5864e9a3-67d7-43b2-9129-10bf0610c2d8"
-                guard=" Nombre no encontrado"
+                guard=" Nombre encontrado"
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="b6c3d053-df81-49b1-a296-b847eea82b7d"
@@ -985,14 +1010,14 @@ sistema xyz.
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="07dbcbc7-8723-4af9-b5cc-c6096fc6737c"
-                  LastKnownName="Ingresa la identidad de la visita no anunciada"
+                  LastKnownName="Ingresar la identidad de la visita no anunciada"
                   LastKnownLocation="Proyecto.uml" />
               </controlFlow>
             </flowNodeTargets>
           </initialNode>
           <opaqueAction
             Id="07dbcbc7-8723-4af9-b5cc-c6096fc6737c"
-            name="Ingresa la identidad de la visita no anunciada"
+            name="Ingresar la identidad de la visita no anunciada"
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
@@ -1016,7 +1041,7 @@ sistema xyz.
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="27e31ce5-0b6a-470a-9e62-608547a22b2f"
-                  LastKnownName="Seleccionara el departamento de unitec que el visitante se dirige"
+                  LastKnownName="Seleccionar el departamento de UNITEC al que el visitante se dirige"
                   LastKnownLocation="Proyecto.uml" />
               </controlFlow>
               <controlFlow
@@ -1025,14 +1050,14 @@ sistema xyz.
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="4d7ee49f-0af7-45a4-a846-c13c8dbc768b"
-                  LastKnownName="Seleccione el tipo de indentidad y ingresar el numero de la indentidad del visistante no anunciado"
+                  LastKnownName="Seleccionar el tipo de identificación e ingresar el numero de la identificación"
                   LastKnownLocation="Proyecto.uml" />
               </controlFlow>
             </flowNodeTargets>
           </decisionNode>
           <opaqueAction
             Id="27e31ce5-0b6a-470a-9e62-608547a22b2f"
-            name="Seleccionara el departamento de unitec que el visitante se dirige"
+            name="Seleccionar el departamento de UNITEC al que el visitante se dirige"
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
@@ -1040,14 +1065,14 @@ sistema xyz.
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="9c0bde3b-5588-4db5-a76d-3a05221f5d0f"
-                  LastKnownName="Seleccionara el numero del carnet que se le asignara al visitante"
+                  LastKnownName="Seleccionar el número de carnet que se le asignará al visitante"
                   LastKnownLocation="Proyecto.uml" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
           <opaqueAction
             Id="4d7ee49f-0af7-45a4-a846-c13c8dbc768b"
-            name="Seleccione el tipo de indentidad y ingresar el numero de la indentidad del visistante no anunciado"
+            name="Seleccionar el tipo de identificación e ingresar el numero de la identificación"
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
@@ -1062,7 +1087,7 @@ sistema xyz.
           </opaqueAction>
           <activityParameterNode
             Id="e7c4c979-071c-4833-9d48-88eacf76200e"
-            name="Visittante no anunciado"
+            name="Visitante no anunciado"
             isLeaf="false"
             ordering="Unordered"
             isControlType="false">
@@ -1088,7 +1113,7 @@ sistema xyz.
           </activityParameterNode>
           <opaqueAction
             Id="9c0bde3b-5588-4db5-a76d-3a05221f5d0f"
-            name="Seleccionara el numero del carnet que se le asignara al visitante"
+            name="Seleccionar el número de carnet que se le asignará al visitante"
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
@@ -1200,7 +1225,7 @@ sistema xyz.
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="27e31ce5-0b6a-470a-9e62-608547a22b2f"
-                  LastKnownName="Seleccionara el departamento de unitec que el visitante se dirige"
+                  LastKnownName="Seleccionar el departamento de UNITEC al que el visitante se dirige"
                   LastKnownLocation="Proyecto.uml" />
               </controlFlow>
             </flowNodeTargets>
@@ -1229,14 +1254,14 @@ sistema xyz.
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="a3b57e21-988c-48c6-b4db-e0b16aab4e87"
-                  LastKnownName="Selecciona el visistante no anunciado de la lista de personas que entraron al campus"
+                  LastKnownName="Seleccionar el visitante no anunciado de la lista de personas que entraron al campus"
                   LastKnownLocation="Proyecto.uml" />
               </controlFlow>
             </flowNodeTargets>
           </initialNode>
           <activityParameterNode
             Id="c6268f14-ca2d-4101-b818-178fa3d6d077"
-            name="Visittante no anunciado"
+            name="Visitante no anunciado"
             isLeaf="false"
             ordering="Unordered"
             isControlType="false">
@@ -1262,7 +1287,7 @@ sistema xyz.
           </activityParameterNode>
           <opaqueAction
             Id="a3b57e21-988c-48c6-b4db-e0b16aab4e87"
-            name="Selecciona el visistante no anunciado de la lista de personas que entraron al campus"
+            name="Seleccionar el visitante no anunciado de la lista de personas que entraron al campus"
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
@@ -1295,7 +1320,7 @@ sistema xyz.
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="10790237-2829-46ed-a012-c1d3604f365c"
-                  LastKnownName="Buscar el visistante no anunciado por numero de indentidad o numero de carnet"
+                  LastKnownName="Buscar el visitante no anunciado por número de indentidad o numero de carnet"
                   LastKnownLocation="Proyecto.uml" />
               </controlFlow>
             </flowNodeTargets>
@@ -1317,7 +1342,7 @@ sistema xyz.
           </opaqueAction>
           <opaqueAction
             Id="10790237-2829-46ed-a012-c1d3604f365c"
-            name="Buscar el visistante no anunciado por numero de indentidad o numero de carnet"
+            name="Buscar el visitante no anunciado por número de indentidad o numero de carnet"
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
