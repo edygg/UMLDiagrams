@@ -104,7 +104,7 @@
       <commentMoniker Id="df02904b-f811-44f4-9b75-a0514f886bfe" />
       <relativeChildShapes />
     </commentShape>
-    <commentConnector edgePoints="[(2.625 : 2.8125); (5.25 : 2.8125)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="217d6bd0-42ed-4e7f-ad2b-af3ef5142428" customColor="Black">
+    <commentConnector edgePoints="[(2.625 : 2.8125); (5.25 : 2.8125)]" fixedFrom="NotFixed" fixedTo="NotFixed" TargetRelationshipDomainClassId="217d6bd0-42ed-4e7f-ad2b-af3ef5142428" customColor="Black">
       <relativeChildShapes />
       <nodes>
         <commentShapeMoniker Id="246d06d5-34cc-4dc1-aadc-6027bf719642" />
@@ -122,7 +122,7 @@
         <actionShapeMoniker Id="4edfc8b2-c2a7-4f49-914b-38f1359113d5" />
       </nodes>
     </commentConnector>
-    <commentConnector edgePoints="[(14 : 4.25); (12.4573343361459 : 4.4910415099772 : JumpStart); (12.2926656638541 : 4.5167709900228 : JumpEnd); (10 : 4.875)]" fixedFrom="NotFixed" fixedTo="NotFixed" TargetRelationshipDomainClassId="217d6bd0-42ed-4e7f-ad2b-af3ef5142428" customColor="Black">
+    <commentConnector edgePoints="[(14 : 4.25); (10 : 4.875)]" fixedFrom="NotFixed" fixedTo="NotFixed" TargetRelationshipDomainClassId="217d6bd0-42ed-4e7f-ad2b-af3ef5142428" customColor="Black">
       <relativeChildShapes />
       <nodes>
         <commentShapeMoniker Id="9a39a12c-05de-4d9a-a356-da2911b899f9" />

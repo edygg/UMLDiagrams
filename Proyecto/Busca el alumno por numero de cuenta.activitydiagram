@@ -5,7 +5,7 @@
       <elementDefinition Id="3a1d3699-b73c-4466-960a-5b1fff745995" />
       <body>Precondiciones:
 
-1. El guardia de entrada peatonal ha iniciado sesión en el sistema XYZ.
+1. El guardia de entrada peatonal ha iniciado sesión en el sistema SII.
 
 2. El guardia de la entrada peatonal está en la facilidad de registro de visitas no anunciadas (FormaRVNA1).
 
@@ -85,7 +85,7 @@
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <activityParameterNode Id="23aae0ad-6cf8-436d-a799-b638ed96ebdb" name="Sistema XYZ" isLeaf="false" ordering="Unordered" isControlType="false">
+          <activityParameterNode Id="23aae0ad-6cf8-436d-a799-b638ed96ebdb" name="Sistema SII" isLeaf="false" ordering="Unordered" isControlType="false">
             <elementDefinition Id="a5c05cf5-207e-46ea-9956-ee6cc3a2caee" />
             <upperBound>
               <literalInteger Id="3037630c-af45-4190-acdf-6614399b7580" name="2147483647" value="2147483647">

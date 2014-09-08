@@ -8,7 +8,7 @@
       Id="56ec1e0d-c965-445e-a901-c75ea1196c8a">
       <body>Precondiciones:
 
-1. Un administrativo
+1. Un funcionario administrativo
  ya registró personas
  como visitas anunciadas
 
@@ -23,11 +23,11 @@
     <comment
       Id="a4de452e-a1a2-4eaa-91fe-4866ec90a0cc">
       <body>Precondiciones
-1. El visitante ya ha sido registrado en el sistema xyz, facilidad registro de visitas anunciadas (FormaRVA1).
+1. El visitante ya ha sido registrado en el sistema SII, facilidad registro de visitas anunciadas (FormaRVA1).
 
 2. El guardia de entrada peatonal/
 vehicular ha iniciado sesion en el 
-sistema xyz.
+sistema SII.
 
 3. El guardia de la entrada peatonal/vehicular esta en la facilidad de ingreso de visitas anunciadas
  (FormaIVA1)
@@ -70,7 +70,7 @@ sistema xyz.
 
 1. El guardia de la entrada peatonal
  ha iniciado sesion en el
-sistema xyz.
+sistema SII.
 
 2. El guardia de entrada peatonal esta en la facilidad de
 registro de visitas no anunciadas.
@@ -107,9 +107,7 @@ registro de visitas no anunciadas.
       Id="40d91335-a488-4b9b-9661-2ae32904c7f2">
       <body>Precondiciones:
 
-1. El funcionario administrativo a iniciado sesion en el portal y existe un ícono en el portal de UNITEC para acceder al sistema XYZ
-
-2. El usuario tiene cargada la pantalla inicial de la facilidad registro de visitas (FormaRVA1)</body>
+1. El funcionario administrativo a iniciado sesion en el portal y existe un ícono en el portal de UNITEC para acceder al sistema SII. El usuario tiene cargada la pantalla inicial de la facilidad registro de visitas (FormaRVA1)</body>
       <annotatedElements>
         <initialNodeMoniker
           Id="30f6bd7d-54e8-46e9-87fb-d85b55136b8d"
@@ -122,7 +120,7 @@ registro de visitas no anunciadas.
       <body>Precondiciones:
 1. El guardia de la entrada peatonal
  ha iniciado sesión en el
-sistema xyz.
+sistema SII.
 
 2. El guardia de la entrada peatonal está en la facilidad de registro de visitas no anunciadas.
 
@@ -166,7 +164,7 @@ sistema xyz.
       Id="3a1d3699-b73c-4466-960a-5b1fff745995">
       <body>Precondiciones:
 
-1. El guardia de entrada peatonal ha iniciado sesión en el sistema XYZ.
+1. El guardia de entrada peatonal ha iniciado sesión en el sistema SII.
 
 2. El guardia de la entrada peatonal está en la facilidad de registro de visitas no anunciadas (FormaRVNA1).
 
@@ -1528,7 +1526,7 @@ sistema xyz.
           </opaqueAction>
           <activityParameterNode
             Id="a5c05cf5-207e-46ea-9956-ee6cc3a2caee"
-            name="Sistema XYZ"
+            name="Sistema SII"
             isLeaf="false"
             ordering="Unordered"
             isControlType="false">

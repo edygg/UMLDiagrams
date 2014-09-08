@@ -4,11 +4,11 @@
     <comment Id="d2d0e6c7-b308-4334-a602-06c65c06c949">
       <elementDefinition Id="a4de452e-a1a2-4eaa-91fe-4866ec90a0cc" />
       <body>Precondiciones
-1. El visitante ya ha sido registrado en el sistema xyz, facilidad registro de visitas anunciadas (FormaRVA1).
+1. El visitante ya ha sido registrado en el sistema SII, facilidad registro de visitas anunciadas (FormaRVA1).
 
 2. El guardia de entrada peatonal/
 vehicular ha iniciado sesion en el 
-sistema xyz.
+sistema SII.
 
 3. El guardia de la entrada peatonal/vehicular esta en la facilidad de ingreso de visitas anunciadas
  (FormaIVA1)
